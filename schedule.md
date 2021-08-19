@@ -10,7 +10,7 @@ gray</span> are tentative.
 
 This schedule could (and probably will) change!  Changes
 to the schedule will be announced in class and/or on
-[Piazza](https://piazza.com/jhu/spring2021/601229).
+[Campuswire](https://campuswire.com).
 
 Unless otherwise indicated, readings are from Bryant and
 O'Hallaron, [Computer Systems: A Programmer's Perspective, 3rd
@@ -38,32 +38,32 @@ Sep 24             | Assembly language in class exercise: [slides](lectures/asse
 Sep 27             | Code and data interactions, buffer overflows: [slides](lectures/lecture11-public.pdf), [buf.zip (example code)](lectures/buf.zip) | 3.10
 Sep 29             | Exam 1 review session
 Oct 1              | **Exam 1** in class
-Oct 4             | Program optimization (basic techniques): see Piazza for slides | 5.1–5.8 |
-Oct 6             | Pipelines: [slides](lectures/lecture13-public.pdf) | Patterson&amp;Hennessy 4.5–4.7 | 
-Oct 8              | Program optimization (ILP, memory, profiling): see Piazza for slides | 5.9–5.14 |
-Oct 11              | Memory hierarchy: [slides](lectures/lecture15-public.pdf) | 6.1–6.3 | 
-Oct 13              | Cache policies: [slides](lectures/lecture16-public.pdf) | 6.4
-Oct 15              | Caches and program execution: see Piazza for slides | 6.5 |
+Oct 4             | Program optimization (basic techniques): see Campuswire for slides | 5.1–5.8 |
+Oct 6             | Pipelines: <!--[slides](lectures/lecture13-public.pdf)-->Slides | Patterson&amp;Hennessy 4.5–4.7 | 
+Oct 8              | Program optimization (ILP, memory, profiling): see Campuswire for slides | 5.9–5.14 |
+Oct 11              | Memory hierarchy: <!--[slides](lectures/lecture15-public.pdf)-->Slides | 6.1–6.3 | 
+Oct 13              | Cache policies: <!--[slides](lectures/lecture16-public.pdf)-->Slides | 6.4
+Oct 15              | Caches and program execution: see Campuswire for slides | 6.5 |
 Oct 18             |
-Oct 20             | Linking basics, symbols, relocations, executables, loading: [slides](lectures/lecture18-public.pdf) | 7.1–7.9 |
-Oct 22             | Dynamic linking, shared libraries, PIC, interpositioning: [slides](lectures/lecture19-public.pdf), [dynload.zip (example code)](lectures/dynload.zip) | 7.10–7.15 |
-Oct 25             | Exceptions, Processes: [slides](lectures/lecture20-public.pdf) | 8.1–8.4, 8.7 |
-Oct 27             | Signals: [slides](lectures/lecture21-public.pdf), [signals.zip (example code)](lectures/signals.zip) | 8.5–8.6 | 
-Oct 29             | Virtual memory: [slides](lectures/lecture22-public.pdf) | 9.1–9.3 | 
-Nov 1             | Memory management, address translation: [slides](lectures/lecture23-public.pdf) | 9.4–9.7
+Oct 20             | Linking basics, symbols, relocations, executables, loading: <!--[slides](lectures/lecture18-public.pdf)-->Slides | 7.1–7.9 |
+Oct 22             | Dynamic linking, shared libraries, PIC, interpositioning: <!--[slides](lectures/lecture19-public.pdf)-->Slides, [dynload.zip (example code)](lectures/dynload.zip) | 7.10–7.15 |
+Oct 25             | Exceptions, Processes: <!--[slides](lectures/lecture20-public.pdf)-->Slides | 8.1–8.4, 8.7 |
+Oct 27             | Signals: <!--[slides](lectures/lecture21-public.pdf)-->Slides, [signals.zip (example code)](lectures/signals.zip) | 8.5–8.6 | 
+Oct 29             | Virtual memory: <!--[slides](lectures/lecture22-public.pdf)-->Slides | 9.1–9.3 | 
+Nov 1             | Memory management, address translation: <!--[slides](lectures/lecture23-public.pdf)-->Slides | 9.4–9.7
 Nov 3             | Exam 2 review session
 Nov 5              | **Exam 2** in class
-Nov 8             | Memory mapping, dynamic memory allocation: [slides](lectures/lecture24-public.pdf) | 9.8, 9.9, 9.11 |
-Nov 10              | Unix I/O, files: [slides](lectures/lecture25-public.pdf) | 10.1–10.11 |
-Nov 12              | Networks, Internet Protocol: [slides](lectures/lecture26-public.pdf) | 11.1–11.3 | 
-Nov 15              | Sockets, Application Protocols: [slides](lectures/lecture27-public.pdf), [sockets.zip (example code)](lectures/sockets.zip) | 11.4 |
-Nov 17              | Network applications, HTTP: [slides](lectures/lecture28-public.pdf), [webserver.zip (example code)](lectures/webserver.zip) | 11.4–11.6 | 
-Nov 19             | Concurrency with processes: [slides](lectures/lecture29-public.pdf), [mp\_webserver.zip (example code)](lectures/mp_webserver.zip) | 12.1 | 
+Nov 8             | Memory mapping, dynamic memory allocation: <!--[slides](lectures/lecture24-public.pdf)-->Slides | 9.8, 9.9, 9.11 |
+Nov 10              | Unix I/O, files: <!--[slides](lectures/lecture25-public.pdf)-->Slides | 10.1–10.11 |
+Nov 12              | Networks, Internet Protocol: <!--[slides](lectures/lecture26-public.pdf)-->Slides | 11.1–11.3 | 
+Nov 15              | Sockets, Application Protocols: <!--[slides](lectures/lecture27-public.pdf)-->Slides, [sockets.zip (example code)](lectures/sockets.zip) | 11.4 |
+Nov 17              | Network applications, HTTP: <!--[slides](lectures/lecture28-public.pdf)-->Slides, [webserver.zip (example code)](lectures/webserver.zip) | 11.4–11.6 | 
+Nov 19             | Concurrency with processes: <!--[slides](lectures/lecture29-public.pdf)-->Slides, [mp\_webserver.zip (example code)](lectures/mp_webserver.zip) | 12.1 | 
 Nov 22–26          | *Thanksgiving vacation, no class*
-Nov 29             | Concurrency with threads: [slides](lectures/lecture30-public.pdf), [mt\_webserver.zip (example code)](lectures/mt_webserver.zip), [mandelbrot.zip (example code)](lectures/mandelbrot.zip) | 12.3 | 
-Dec 1             | Thread synchronization: [slides](lectures/lecture31-public.pdf), [synch.zip (example code)](lectures/synch.zip) | 12.4–12.5
-Dec 3             | Concurrency with I/O multiplexing: [slides](lectures/lecture32-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | 12.2 | 
-Dec 6             | Parallelism, concurrency issues: [slides](lectures/lecture33-public.pdf), [synch2.zip (example code)](lectures/synch2.zip) | 12.6–12.7 |
+Nov 29             | Concurrency with threads: <!--[slides](lectures/lecture30-public.pdf)-->Slides, [mt\_webserver.zip (example code)](lectures/mt_webserver.zip), [mandelbrot.zip (example code)](lectures/mandelbrot.zip) | 12.3 | 
+Dec 1             | Thread synchronization: <!--[slides](lectures/lecture31-public.pdf)-->Slides, [synch.zip (example code)](lectures/synch.zip) | 12.4–12.5
+Dec 3             | Concurrency with I/O multiplexing: <!--[slides](lectures/lecture32-public.pdf)-->Slides, [iomux.zip (example code)](lectures/iomux.zip) | 12.2 | 
+Dec 6             | Parallelism, concurrency issues: <!--[slides](lectures/lecture33-public.pdf)-->Slides, [synch2.zip (example code)](lectures/synch2.zip) | 12.6–12.7 |
 TBD                | Final exam review session | | 
 TBD                | **Exam 3** (during scheduled final exam time slot)
 
