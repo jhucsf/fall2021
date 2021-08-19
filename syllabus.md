@@ -14,38 +14,19 @@ category: "syllabus"
 
 [David Hovemeyer](https://www.cs.jhu.edu/~daveho)
 
-Office: Malone 337
+Office: Malone 240A
 
-Office hours: T/Th 1–3pm EDT (see [Piazza](https://piazza.com/jhu/spring2021/601229) for office hours URL)
+Office hours: TBD
 
 ## Course Assistants
 
-Head CAs:
-
-* Rebecca Yu [ryu16@jhu.edu](mailto:ryu16@jhu.edu)
-* Eric Rong [erong1@jhu.edu](mailto:erong1@jhu.edu)
-
-CAs:
-
-* Ryan Rubel <rrubel1@jhu.edu>
-* Bannu Kasimahanthi <dkasima1@jhu.edu>
-* Max Hahn <mhahn12@jhu.edu>
-* Aditya Balaji <abalaji2@jhu.edu>
-* David Skaff <dskaff1@jhu.edu>
-* Jason Kurlander <jkurlan3@jhu.edu>
-* Gary Yang <yyang117@jhu.edu>
-* Alexander Wei <awei11@jhu.edu>
-* Simon Allocca <sallocc1@jh.edu>
-* Daniel Weber <dweber11@jhu.edu>
-* Sabrina Li <sli159@jhu.edu>
+TBD
 
 ## Meeting
 
-Section 01: MWF 9:00–9:50 am
+Section 01: MWF 9:00–9:50 am in Ames 234
 
-Section 02: MWF 10:00–10:50 am
-
-Class meetings will be held virtually via Zoom.  See [Piazza](https://piazza.com/jhu/spring2021/601229) for URLs.
+Section 02: MWF 10:00–10:50 am online via Zoom (meeting URL TBD)
 
 ## Textbook
 
@@ -56,10 +37,10 @@ Optional: [Computer Organization and Design (MIPS edition)](https://www.elsevier
 ## Online Resources
 
 Lecture notes, assignments, and public information about the course will
-be posted on the course website, <https://jhucsf.github.io/spring2021>.
+be posted on the course website, <https://jhucsf.github.io/fall2021>.
 You should check the course website frequently.
 
-Piazza (announcements, discussion): <https://piazza.com/jhu/spring2021/601229>
+Campuswire (announcements, discussion): <https://campuswire.com>
 
 Gradescope (assignment/exam submission and grading): <https://www.gradescope.com>
 
