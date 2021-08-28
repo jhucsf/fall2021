@@ -3,9 +3,9 @@ layout: default
 title: "Assignment 1: Fixed-point arithmetic"
 ---
 
-Milestone 1: due *TBD*
+Milestone 1: due Tuesday Sep 7th by 11pm
 
-Milestone 2: due *TBD*
+Milestone 2: due Tuesday Sep 14th by 11pm
 
 Assignment type: **Pair**, you may work with one partner
 
@@ -19,11 +19,38 @@ The grading breakdown is as follows:
 
 For Milestone 1 (20% of assignment grade):
 
-* Details coming soon
+- Implementation of functions (20%)
+  - `fixedpoint_create`
+  - `fixedpoint_create2`
+  - `fixedpoint_whole_part`
+  - `fixedpoint_frac_part`
+  - `fixedpoint_is_zero`
 
 For Milestone 2 (80% of assignment grade):
 
-* Details coming soon
+* Implementation of functions (70%)
+  - `fixedpoint_create_from_hex`
+  - `fixedpoint_negate`
+  - `fixedpoint_add`
+  - `fixedpoint_sub`
+  - `fixedpoint_negate`
+  - `fixedpoint_halve`
+  - `fixedpoint_double`
+  - `fixedpoint_compare`
+  - `fixedpoint_is_err`
+  - `fixedpoint_is_neg`
+  - `fixedpoint_is_overflow_neg`
+  - `fixedpoint_is_overflow_pos`
+  - `fixedpoint_is_underflow_neg`
+  - `fixedpoint_is_underflow_pos`
+  - `fixedpoint_is_valid`
+  - `fixedpoint_format_as_hex`
+* Design and coding style (10%)
+
+Note that the functions can't be tested completely independently of each other, and
+in some cases to earn credit for one function, another will need to work correctly.
+For example, some of the tests will depend on `fixedpoint_format_as_hex` working
+correctly.
 
 ## Getting started
 
@@ -63,7 +90,7 @@ Any base can be used in a fixed-point representation, and it is natural to use a
 
 > 1001111.01000000
 
-Note that in the fractional part ".01000000", the "1" digit is in the fourth's place.  More generally, in a base-2 "decimal-like" fraction, the first bit after the decimal point is the halve's place (2<sup>-1</sup>), the second bit is the fourth's place (2<sup>-2</sup>), the third bit is the eighth's place (2<sup>-3</sup>), etc.
+Note that in the fractional part ".01000000", the "1" digit is in the fourth's place.  More generally, in a base-2 "decimal-like" fraction, the first bit after the decimal point is the half's place (2<sup>-1</sup>), the second bit is the fourth's place (2<sup>-2</sup>), the third bit is the eighth's place (2<sup>-3</sup>), etc.
 
 ## The `Fixedpoint` data type
 
@@ -77,7 +104,7 @@ typedef struct {
 
 An instance of `Fixedpoint` is a base-2 fixed point value, in which both the whole part and fractional part of the representaion are 64 bits in size.  `Fixedpoint` values can be negative or non-negative.
 
-Note that the `Fixedpoint` type has *by-value* semantics. It can be copied by value, passed by value, and returned by value. You will not need to use dynamic memory allocation for this assignment. (You may use dynamic memory allocation as part of implementing the required functions if you feel that it is necessary. If you use dynamic allocation, make sure that there are no memory leaks.)
+Note that the `Fixedpoint` type has *by-value* semantics. It can be copied by value, passed by value, and returned by value.  The only function requiring dynamic memory allocation is `fixedpoint_format_as_hex`, which returns a dynamically allocated character string.
 
 Your main task for this assignment is to implement the following functions:
 
@@ -153,8 +180,10 @@ The unit tests use the [tctest](https://github.com/daveho/tctest) unit test fram
 
 The basic idea is to create instances of `Fixedpoint` that can be used to test the various functions: these objects form the *test fixture*.  Then, test functions carry out function calls on the test fixture objects (potentially creating new instances of `Fixedpoint` as intermediate results), and use assertions to check that the observed behavior matches the expected behavior.
 
-The provided `fixedpoint_tests.c` program has some basic tests to get you started, but you should
-add additional tests of your own.  Note that part of your grade for Milestone 2 will be based
+The provided `fixedpoint_tests.c` program has some basic tests to get you started;
+note that these tests are not comprehensive.
+
+You should add additional tests of your own.  Part of your grade for Milestone 2 will be based
 on how thorough your unit tests are.  A minimum expectation of unit tests is that all public functions
 are tested.  So, make sure that all of the functions declared in `fixedpoint.h` are testd.
 More generally, unit tests should test the complete range of functionality specified for each
