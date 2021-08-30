@@ -26,10 +26,10 @@ Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Topic/Slides | Reading | Assignment
 Aug 30             | Course overview, binary data representation review: [slides](lectures/lecture01-public.pdf) | 1.1–1.9
 Sep 1             | Data representation, addresses: [slides](lectures/lecture02-public.pdf) | 2.1
 Sep 3             | Integer representation: [slides](lectures/lecture03-public.pdf) | 2.2
-Sep 6              | Labor day, no class
+Sep 6              | Labor day, no class | | A1 MS1 due Tues 9/7
 Sep 8              | Integer arithmetic: [slides](lectures/lecture04-public.pdf) | 2.3 | 
 Sep 10             | Floating point: [slides](lectures/lecture05-public.pdf) | 2.4 |
-Sep 13              | Machine-level program representation: [slides](lectures/lecture06-public.pdf) | 3.1–3.4 |
+Sep 13              | Machine-level program representation: [slides](lectures/lecture06-public.pdf) | 3.1–3.4 | A1 MS2 due Tues 9/14
 Sep 15              | ALU operations, arithmetic: [slides](lectures/lecture07-public.pdf), [alu.zip (example code)](lectures/alu.zip) | 3.5 | 
 Sep 17             | Control flow: [slides](lectures/lecture08-public.pdf), [control.zip (example code)](lectures/control.zip) | 3.6 |
 Sep 20             | Procedures, stacks: [slides](lectures/lecture09-public.pdf), [control2.zip (example code)](lectures/control2.zip) | 3.7

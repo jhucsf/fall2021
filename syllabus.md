@@ -16,17 +16,17 @@ category: "syllabus"
 
 Office: Malone 240A
 
-Office hours: TBD
+Office hours: T/Th 1-3pm, or by arrangement (email me), via Zoom (see Campuswire for zoom link)
 
 ## Course Assistants
 
-TBD
+Coming soon!
 
 ## Meeting
 
 Section 01: MWF 9:00–9:50 am in Ames 234
 
-Section 02: MWF 10:00–10:50 am online via Zoom (meeting URL TBD)
+Section 02: MWF 10:00–10:50 am online via Zoom
 
 ## Textbook
 
