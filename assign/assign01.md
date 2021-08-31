@@ -33,7 +33,6 @@ For Milestone 2 (80% of assignment grade):
   - `fixedpoint_negate`
   - `fixedpoint_add`
   - `fixedpoint_sub`
-  - `fixedpoint_negate`
   - `fixedpoint_halve`
   - `fixedpoint_double`
   - `fixedpoint_compare`
