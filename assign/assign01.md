@@ -9,6 +9,9 @@ Milestone 2: due Tuesday Sep 14th by 11pm
 
 Assignment type: **Pair**, you may work with one partner
 
+*Update 9/1*: The grading criteria for Milestone 2 have been updated so that
+the comprehensiveness and quality of your unit tests are part of the grade.
+
 # Overview
 
 In this assignment, you will implement a simple C library for fixed-point arithmetic.
@@ -28,7 +31,7 @@ For Milestone 1 (20% of assignment grade):
 
 For Milestone 2 (80% of assignment grade):
 
-* Implementation of functions (70%)
+* Implementation of functions (60%)
   - `fixedpoint_create_from_hex`
   - `fixedpoint_negate`
   - `fixedpoint_add`
@@ -44,6 +47,7 @@ For Milestone 2 (80% of assignment grade):
   - `fixedpoint_is_underflow_pos`
   - `fixedpoint_is_valid`
   - `fixedpoint_format_as_hex`
+* Comprehensiveness and quality of your unit tests (10%)
 * Design and coding style (10%)
 
 Note that the functions can't be tested completely independently of each other, and
