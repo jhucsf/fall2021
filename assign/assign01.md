@@ -12,6 +12,9 @@ Assignment type: **Pair**, you may work with one partner
 *Update 9/1*: The grading criteria for Milestone 2 have been updated so that
 the comprehensiveness and quality of your unit tests are part of the grade.
 
+*Update 9/14*: [genfact.rb](genfact.rb) script provided to aid in generation
+of test cases
+
 # Overview
 
 In this assignment, you will implement a simple C library for fixed-point arithmetic.
@@ -224,6 +227,24 @@ ASSERT(0x63422e9ad4e76000UL == fixedprec_frac_part(sum));
 Note that Python and Ruby both support arbitrary-precision integer values and
 arithmetic, which makes them very suitable for working with the large values
 supported by the `Fixedpoint` data type.
+
+*Update 9/13*: The [genfact.rb](genfact.rb) script is a Ruby program that
+will generate random addition and subtraction facts that you can adapt into
+automated tests.
+
+Example of downloading and running it (user input in <b>bold</b>):
+
+<div class="highlighter-rouge"><pre>
+$ <b>curl -O https://jhucsf.github.io/fall2021/assign/genfact.rb</b>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  2917  100  2917    0     0  72925      0 --:--:-- --:--:-- --:--:-- 72925
+$ <b>chmod a+x genfact.rb</b>
+$ <b>./genfact.rb</b>
+2f8.3aa8f5cc875bb53 + 8629.6b = 8921.a5a8f5cc875bb53
+$ <b>./genfact.rb -s</b>
+-6f0e16f.dbc4789df785 - -53eb.a45c7540ef402 = -6f08d84.3768035d0844e
+</pre></div>
 
 ## Running a specific test function
 
