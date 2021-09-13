@@ -83,3 +83,61 @@ The `grep` program actually does more than just search for literal strings.
 It can search for occurrences of text matching a regular expression pattern.
 However, your text search program will not need to implement regular expression
 matching, and instead, will only need to search for occurrences of literal text.
+
+## `c_textsearch` and `asm_textsearch`
+
+In this assignment, you will implement two functionally-equivalent programs,
+`c_textsearch` and `asm_textsearch`.  The first will be implemented entirely
+in C, and the second will be implemented entirely in x86-64 assembly language.
+
+The programs are invoked as follows:
+
+<div class="highlighter-rouge"><pre>
+./c&#95;textsearch <i>string</i> <i>filename</i>
+./c&#95;textsearch -c <i>string</i> <i>filename</i>
+./asm&#95;textsearch <i>string</i> <i>filename</i>
+./asm&#95;textsearch -c <i>string</i> <i>filename</i>
+</pre></div>
+
+When invoked without the `-c` command line option, the programs behave much
+like the `grep` program, printing out each line of text containing at least
+one occurrence of the search string.  (As mentioned previously, your program
+should only search for literal occurrences, and should not implement regular
+expression pattern matching.)
+
+When invoked with the `-c` option, the programs should print a single line of
+output of the form
+
+<div class="highlighter-rouge"><pre>
+<i>N</i> occurrence(s)
+</pre></div>
+
+where *N* is the number of times the search string occurs in the overall input
+file.
+
+Example run using the `pandp.txt` file shown above (user input in **bold**):
+
+<div class="highlighter-rouge"><pre>
+$ <b>./c&#95;textsearch truth pandp.txt</b>
+It is a truth universally acknowledged, that a single man in
+on his first entering a neighbourhood, this truth is so well
+$ <b>./c&#95;textsearch -c truth pandp.txt</b>
+2 occurrence(s)
+$ <b>echo $?</b>
+0
+</pre></div>
+
+Any time the program (`c_textsearch` or `asm_textsearch`) finishes normally
+(by reading the input text file and successfully executing the search), it
+should exit with an exit code of 0.
+
+If invalid command-line arguments are given, or if the input file can't
+be opened, then the program should print an error message to `stderr`
+and exit with an exit code of 1.  For example:
+
+<div class="highlighter-rouge"><pre>
+$ <b>./c&#95;textsearch truth nonexistent.txt</b>
+Could not open file
+$ <b>echo $?</b>
+1
+</pre></div>
