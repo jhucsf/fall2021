@@ -144,6 +144,14 @@ $ <b>echo $?</b>
 
 # Important requirements
 
+## Assembly code must be hand-written
+
+For the assembly language components of the assignment, you are required to
+write the assembly code *by hand*.  You may not submit the assembly language
+output from a compiler.  Also, you are required to write detailed comments
+explaining how your assembly code works.  (See the example `first_occur`
+function below for an example of the kind of comments we expect.)
+
 ## Use of C library functions
 
 In the implementation of both programs (`c_textsearch` and `asm_textsearch`), you
@@ -270,7 +278,11 @@ is properly aligned in any function that will call other functions.
 
 ## Milestone 3
 
-TODO: describe expectations for Milestone 3
+In Milestone 3, you will need to fully implement the `asm_textsearch`
+program, which should have identical behavior to the `c_textsearch`
+program.  You will need to implement a `main` function in `asm_textsearch.S`,
+and `asm_textsearch_fns.S` should have assembly language implementations
+of all of the functions declared in `textsearch_fns.h`.
 
 # Recommendations and tips
 
