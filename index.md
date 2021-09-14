@@ -21,5 +21,6 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Sep 14** — [Assignment 2](assign/assign02.html) has been posted. There are three milestones, due Tues Sep 21, Fri Sep 24, and Tues Oct 5.
 * **Sep 1** — [Assignment 1](assign/assign01.html) has been updated so that the comprehensiveness and quality of your unit tests are explicitly part of the grading criteria for Milestone 2.
 * **Aug 30** — Welcome back! [Assignment 1](assign/assign01.html) is available, with two milestones due Tues Sep 7th and Tues Sep 14th. Note that it is a pair assignment. See Campuswire post \#2 if you are looking for a partner to work with.

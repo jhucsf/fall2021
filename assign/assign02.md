@@ -5,7 +5,7 @@ title: "Assignment 2: Text Search"
 
 Milestone 1: due **Tuesday, Sept 21st** by 11pm
 
-Milestone 2: due **Friday, Sept 25th** by 11pm
+Milestone 2: due **Friday, Sept 24th** by 11pm
 
 Milestone 3: due **Tuesday, Oct 5th** by 11pm
 
