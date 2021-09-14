@@ -271,11 +271,112 @@ modifies them, and you must assume that the values of caller-saved registers
 could by changed by a function call.  Also, make sure that the stack pointer
 is properly aligned in any function that will call other functions.
 
-# Suggestions for writing unit tests
+# Recommendations and tips
+
+## General recommendations for writing assembly language code
+
+*Use registers for local variables.*  For most local variables in your
+code, you can use a register as the storage location.  The callee-saved
+registers (`%rbx`, `%rbp`, `%r12`–`%r15`) are the most straightforward
+to use, but you will need to save their previous contents and then
+restore them before returning from the function.  (The `pushq` and
+`popq` instructions make saving and restoring register contents easy.)
+The caller-saved registers (`%r10` and `%r11`) don't need to be saved
+and restored, but their values aren't preserved across function calls,
+so they're tricker to use correctly.
+
+*Use the frame pointer to keep track of local variables in memory.*
+Some variables will need to be allocated in memory.  You can allocate
+such variables in the stack frame of the called function.  The frame
+pointer register (`%rbp`) can help you easily access these variables.
+A typical setup for a function which allocates variables in the stack
+frame would be something like
+
+```
+myFunc:
+    pushq %rbp                      /* save previous frame pointer */
+    subq $N, %rsp                   /* reserve space for local variable(s) */
+    movq %rsp, %rbp                 /* set up frame pointer */
+
+    /*
+     * implementation of function: local variables can be accessed
+     * relative to %rbp, e.g. 0(%rbp), 8(%rbp), etc.
+     */
+
+    addq $N, %rsp                   /* deallocate space for local variable(s) */
+    popq %rbp                       /* restore previous frame pointer */
+    ret
+```
+
+The code above allocates *N* bytes of memory in the stack frame for
+local variables. Note that *N* needs to be a multiple of 16 to ensure
+correct stack pointer alignment.  (Think about it!)
+
+*Use `leaq` to compute addresses of local variables.* It is likely
+that one or more of your functions takes a pointer to a variable as
+a parameter.  When calling such a function, the `leaq` instruction
+provides a very convenient way to compute the address of a variable.
+For example, let's say we want to pass the address of a local variable
+8 bytes offset from the frame pointer (`%rbp`) as the first argument to
+a function.  We could load the address of this variable into the `%rdi`
+register (used for the first function argument) using the instruction
+
+```
+leaq 8(%rbp), %rdi
+```
+
+*Use local labels starting with `.L` for flow control.*  As you implement
+flow control (such as loops and decisions) in your program, you will
+need to define labels for branch targets.  You should use names starting
+with `.L` (period followed by capital L) for these labels.  This will
+ensure that the assembler does not enter them into the symbol table as
+function entry points, which will make debugging with `gdb` difficult.
+Here is an example assembly language function with local labels:
+
+```
+/*
+ * Find the first occurrence of a specified character value
+ * in a NUL-terminated character string.
+ *
+ * Parameters:
+ *   s - pointer to a NUL-terminated character string
+ *   c - character to search for
+ *
+ * Returns:
+ *    pointer to first occurrence of the search character,
+ *    or NULL if the character does not occur in the string
+ */
+	.globl first_occur
+first_occur:
+	subq $8, %rsp
+
+	mov %rdi, %rax             /* set %rax to start of string */
+
+.Lfirst_occur_loop:
+	cmpb $0, (%rax)            /* NUL terminator reached? */
+	je .Lfirst_occur_not_found /* if so, search failed */
+	cmpb %sil, (%rax)          /* found occurrence of character? */
+	je .Lfirst_occur_done      /* if so, success */
+	inc %rax                   /* advance to next character */
+	jmp .Lfirst_occur_loop     /* continue loop */
+
+.Lfirst_occur_not_found:
+	movq $0, %rax              /* return NULL pointer */
+
+.Lfirst_occur_done:
+	addq $8, %rsp
+	ret
+```
+
+Note that the function above also illustrates what we consider to be an
+appropriate amount of detail for code comments.
+
+
+## Suggestions for writing unit tests
 
 TODO: describe how to use `fmemopen`
 
-# Suggestions for testing and debugging
+## Suggestions for testing and debugging
 
 # Submitting
 
