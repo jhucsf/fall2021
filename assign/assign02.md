@@ -11,6 +11,9 @@ Milestone 3: due **Tuesday, Oct 5th** by 11pm
 
 Assignment type: **Pair**, you may work with one partner
 
+*Note: this is a preliminary assignment description, and will be updated
+with additional information in the near future.*
+
 # Overview
 
 In this assignment, you will implement a program to search for occurrences
@@ -20,14 +23,14 @@ x86-64 assembly language.
 
 ## Milestones, grading criteria
 
-Grading criteria for milestone 1:
+Grading criteria for Milestone 1:
 
 * Fully implement `c_textsearch.c` and `c_textsearch_fns.c` (i.e., the `c_textsearch`
   works correctly) (10%)
-* `textsearch_fns_tests.c` program has unit tests for all functions declared in `textsearch_fns.h`
-  and implemented in `c_textsearch_fns.c` (10%)
+* `textsearch_fns_tests.c` program has comprehensive unit tests for all functions
+  declared in `textsearch_fns.h` and implemented in `c_textsearch_fns.c` (10%)
 
-Grading criteria for milestone 2:
+Grading criteria for Milestone 2:
 
 * `asm_textsearch_fns.S` implements at least one function declared in `textsearch_fns.h`, and
   it passes the unit tests in `textsearch_fns_tests.c` (10%)
@@ -37,7 +40,7 @@ which test functions in `asm_textsearch_fns.S` that aren't implemented.
 I.e., `make asm_textsearch_fns_tests` should succeed, and when the `asm_textsearch_fns_tests`
 program is run, at least one test function should complete successfully.
 
-Grading criteria for milestone 3:
+Grading criteria for Milestone 3:
 
 * All functions in `asm_textsearch_fns.S` are fully implemented, and
   pass the unit tests in `textsearch_fns_tests.c` (30%)
@@ -144,6 +147,8 @@ $ <b>echo $?</b>
 
 # Important requirements
 
+## Use of C library functions
+
 In the implementation of both programs (`c_textsearch` and `asm_textsearch`), you
 many *only* use the following C library functions:
 
@@ -161,9 +166,37 @@ may use any C library function.
 Submissions which improperly use any C library functions other than the ones listed
 above will not receive credit.
 
+Note that this means that you will need to implement your own string functions.
+(Use of C library C functions such as `strlen` is not allowed.)
+
+## Input line length
+
+The `c_textsearch` and `asm_textsearch` programs are only required to fully handle lines
+with 511 or fewer characters.  If an input file has a line which exceeds 511 characters,
+it should search only the first 511 characters on that line.  (In other words,
+only the first 511 characters of the line need to be read into memory.)
+
+The `MAXLINE` constant defined in `textsearch_fns.h` can be used to specify this limit.
+
 # Tasks/milestones
 
 This section has more details on the expectations for each of the three milestones.
+
+Briefly, here is how you will make progress on completing the milestones:
+
+* In Milestone 1, you will complete a full implementation of `c_textsearch`,
+  declaring and implementing a collection of helper functions to do most
+  of the work of implementing the text search functionality.  You will
+  also write unit tests for your helper functions.
+* In Milestone 2, you will begin to implement the same helper functions
+  you defined in Milestone 1, but this time, you will implement them in
+  x86-64 assembly language.  You will be able to use the same unit tests
+  from Milestone 1 to test your assembly language functions, because the
+  assembly language functions should be completely equivalent to their C
+  counterparts.
+* In Milestone 3, you will complete the full `asm_textsearch` program, in
+  which the `main` function and all of the helper functions are implemented
+  in assembly language.
 
 ## Milestone 1
 
@@ -217,11 +250,32 @@ make c_textsearch_fns_tests
 
 ## Milestone 2
 
-In Milestone 2, you must implement at least one of the functions
+In Milestone 2, you must implement at least one of the functions declared in
+`textsearch_fns.h` in x86-64 assembly language, and use unit tests to demonstrate
+that it works correctly.
+
+Note that you may need to comment out the unit tests in `textsearch_fns_tests.c`
+which test functions that you haven't yet implemented in x86-64 assembly language.
+
+To build the `asm_textsearch_fns_tests` unit test program (in which your assembly
+language functions are tested by the unit tests you wrote in C), run the command
+
+```
+make asm_textsearch_fns_tests
+```
+
+**Extremely important**: Make sure that **all** of your assembly language code
+adheres to the x86-64 Linux register use and procedure calling conventions.
+For example, callee-saved registers must be saved and restored if your function
+modifies them, and you must assume that the values of caller-saved registers
+could by changed by a function call.  Also, make sure that the stack pointer
+is properly aligned in any function that will call other functions.
 
 # Suggestions for writing unit tests
 
 TODO: describe how to use `fmemopen`
+
+# Suggestions for testing and debugging
 
 # Submitting
 
