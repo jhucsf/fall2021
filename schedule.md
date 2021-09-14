@@ -32,13 +32,13 @@ Sep 10             | Floating point: [slides](lectures/lecture05-public.pdf) | 2
 Sep 13              | Machine-level program representation: [slides](lectures/lecture06-public.pdf) | 3.1–3.4 | A1 MS2 due Tues 9/14
 Sep 15              | ALU operations, arithmetic: [slides](lectures/lecture07-public.pdf), [alu.zip (example code)](lectures/alu.zip) | 3.5 | 
 Sep 17             | Control flow: [slides](lectures/lecture08-public.pdf), [control.zip (example code)](lectures/control.zip) | 3.6 |
-Sep 20             | Procedures, stacks: [slides](lectures/lecture09-public.pdf), [control2.zip (example code)](lectures/control2.zip) | 3.7
+Sep 20             | Procedures, stacks: [slides](lectures/lecture09-public.pdf), [control2.zip (example code)](lectures/control2.zip) | 3.7 | <span class="tentative">A2 MS1 due Tues 9/21</span>
 Sep 22             | Arrays and structs: [slides](lectures/lecture10-public.pdf), [arraystruct.zip (example code)](lectures/arraystruct.zip) | 3.8–3.9 | 
-Sep 24             | Assembly language in class exercise: [slides](lectures/assembly-public.pdf) | |
-Sep 27             | Code and data interactions, buffer overflows: [slides](lectures/lecture11-public.pdf), [buf.zip (example code)](lectures/buf.zip) | 3.10
+Sep 24             | Assembly language in class exercise: [slides](lectures/assembly-public.pdf) | | <span class="tentative">A2 MS2 due</span>
+Sep 27             | Code and data interactions, buffer overflows: [slides](lectures/lecture11-public.pdf), [buf.zip (example code)](lectures/buf.zip) | 3.10 | 
 Sep 29             | Exam 1 review session
 Oct 1              | **Exam 1** in class
-Oct 4             | Program optimization (basic techniques): see Campuswire for slides | 5.1–5.8 |
+Oct 4             | Program optimization (basic techniques): see Campuswire for slides | 5.1–5.8 | <span class="tentative">A2 MS3 due Tues 10/5</span>
 Oct 6             | Pipelines: <!--[slides](lectures/lecture13-public.pdf)-->Slides | Patterson&amp;Hennessy 4.5–4.7 | 
 Oct 8              | Program optimization (ILP, memory, profiling): see Campuswire for slides | 5.9–5.14 |
 Oct 11              | Memory hierarchy: <!--[slides](lectures/lecture15-public.pdf)-->Slides | 6.1–6.3 | 
