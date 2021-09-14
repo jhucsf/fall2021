@@ -271,6 +271,10 @@ modifies them, and you must assume that the values of caller-saved registers
 could by changed by a function call.  Also, make sure that the stack pointer
 is properly aligned in any function that will call other functions.
 
+## Milestone 3
+
+TODO: describe expectations for Milestone 3
+
 # Recommendations and tips
 
 ## General recommendations for writing assembly language code
@@ -374,7 +378,67 @@ appropriate amount of detail for code comments.
 
 ## Suggestions for writing unit tests
 
-TODO: describe how to use `fmemopen`
+Your approach to writing unit tests should be similar to the one you used
+in [Assignment 1](assign01.html).  Make sure each function (in `textsearch_fns.h`)
+is tested, and test the full range of functionality for each function,
+including important corner cases.
+
+Note that you might be wondering whether it is possible to implement
+unit tests for functions which do I/O (i.e., reading from or writing
+to a `FILE *` file handle.)  The good news is that it is fairly
+straightforward to do so by using the
+[`fmemopen`](https://man7.org/linux/man-pages/man3/fmemopen.3.html) function.
+
+For example, here is a test function which tests the `read_line` function,
+which is intended to read a single line of text from an input file:
+
+```c
+void test_read_line(TestObjs *objs) {
+  // the fmemopen function allows us to treat a character string
+  // as an input file
+  FILE *in = fmemopen((char *) objs->pandp, strlen(objs->pandp), "r");
+  char buf[MAXLINE + 1];
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 == strcmp(buf,
+   "It is a truth universally acknowledged, that a single man in"));
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 == strcmp(buf,
+    "possession of a good fortune, must be in want of a wife."));
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 == strcmp(buf, ""));
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 == strcmp(buf,
+    "However little known the feelings or views of such a man may be"));
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 ==strcmp(buf,
+    "on his first entering a neighbourhood, this truth is so well"));
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 == strcmp(buf,
+    "fixed in the minds of the surrounding families, that he is"));
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 == strcmp(buf,
+    "considered as the rightful property of some one or other of their"));
+
+  ASSERT(read_line(in, buf));
+  ASSERT(0 == strcmp(buf, "daughters."));
+
+  // at this point we have read the last line
+  ASSERT(!read_line(in, buf));
+
+  fclose(in);
+}
+```
+
+The idea here is that `fmemopen` opens a memory buffer as though it were a file.
+In the test above, `objs->pandp` is a literal string containing the text of the
+first two paragraphs of Pride and Prejudice.
 
 ## Suggestions for testing and debugging
 
