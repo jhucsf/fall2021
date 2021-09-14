@@ -141,3 +141,80 @@ Could not open file
 $ <b>echo $?</b>
 1
 </pre></div>
+
+# Important requirements
+
+In the implementation of both programs (`c_textsearch` and `asm_textsearch`), you
+many *only* use the following C library functions:
+
+* `fopen`
+* `fclose`
+* `printf`
+* `fprintf`
+* `fgetc`
+* `fputc`
+* `exit`
+
+**As an exception to this requirement**, your unit tests in `textsearch_fns_tests.c`
+may use any C library function.
+
+Submissions which improperly use any C library functions other than the ones listed
+above will not receive credit.
+
+# Tasks/milestones
+
+This section has more details on the expectations for each of the three milestones.
+
+## Milestone 1
+
+For Milestone 1, you will implement just the C version of the text search
+program (`c_textsearch`).
+
+You will need to make changes to four files:
+
+* `textsearch_fns.h`: This header file declares functions used by the `main` function
+* `c_textsearch_fns.c`: This will contain implementation of the functions declared in `textsearch_fns.h`
+* `c_textsearch.c`: This file defines the `main` function for the `c_textsearch` program
+* `textsearch_fns_tests.c`: This file implements unit tests for the functions declared in
+  `textsearch_fns.h` and defined in `c_textsearch_fns.c`
+
+You should strive to delegate as much of the required program functionality to functions
+declared in `textsearch_fns.h`.  Which functions you define is up to you.  Here is
+a suggested list of function declarations, which were used in the reference solution:
+
+```c
+int read_line(FILE *in, char *buf);
+void print_line(FILE *out, const char *buf);
+unsigned count_occurrences(const char *line, const char *str);
+unsigned find_string_length(const char *s);
+int starts_with(const char *s, const char *pfx);
+int strings_equal(const char *s1, const char *s2);
+```
+
+You are welcome to use these functions as the basis for your implementation, but you are
+not required to.
+
+Note one very important point: you should design your functions so that it will be
+straightforward to:
+
+* Write unit tests to test their functionality
+* Implement them in x86-64 assembly language
+
+We believe the functions shown above have these properties. You are welcome to
+use or adapt them, but this is not a requirement of the assignment.
+
+To build the `c_textsearch` program, run the command
+
+```
+make c_textsearch
+```
+
+To build the `c_textsearch_fns_tests` program:
+
+```
+make c_textsearch_fns_tests
+```
+
+## Milestone 2
+
+In Milestone 2, you must implement at least one of the functions
