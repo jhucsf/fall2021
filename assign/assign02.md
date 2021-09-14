@@ -11,9 +11,6 @@ Milestone 3: due **Tuesday, Oct 5th** by 11pm
 
 Assignment type: **Pair**, you may work with one partner
 
-*Note: this is a preliminary assignment description, and will be updated
-with additional information in the near future.*
-
 # Overview
 
 In this assignment, you will implement a program to search for occurrences
@@ -176,7 +173,7 @@ with 511 or fewer characters.  If an input file has a line which exceeds 511 cha
 it should search only the first 511 characters on that line.  (In other words,
 only the first 511 characters of the line need to be read into memory.)
 
-The `MAXLINE` constant defined in `textsearch_fns.h` can be used to specify this limit.
+The `MAXLINE` constant defined in `textsearch_fns.h` specifies this limit.
 
 # Tasks/milestones
 
