@@ -218,3 +218,39 @@ make c_textsearch_fns_tests
 ## Milestone 2
 
 In Milestone 2, you must implement at least one of the functions
+
+# Suggestions for writing unit tests
+
+TODO: describe how to use `fmemopen`
+
+# Submitting
+
+Before you submit, prepare a `README.txt` file so that it contains your
+names, and briefly summarizes each of your contributions to the submission
+(i.e., who worked on what functionality.) This may be very brief if you
+did not work with a partner.
+
+To submit your work:
+
+Run the following commands to create a `solution.zip` file:
+
+```
+rm -f solution.zip
+zip -9r solution.zip Makefile *.h *.c README.txt
+```
+
+Upload `solution.zip` to [Gradescope](https://www.gradescope.com/)
+as **Assignment 2 MS1**, **Assignment 2 MS2**, or **Assignment 2 MS3**,
+depending on which milestone you are submitting.
+
+Please check the files you uploaded to make sure they are the ones you intended to submit.
+
+## Autograder
+
+When you upload your submission to Gradescope, it will be tested by
+the autograder.  Please note the following:
+
+* If your code does not compile successfully, all of the tests will fail
+* The autograder runs `valgrind` on your code, but it does *not* report
+  any information about the result of running `valgrind`: points will be
+  deducted if your code has memory errors or memory leaks!
