@@ -451,6 +451,22 @@ first two paragraphs of Pride and Prejudice.
 
 ## Suggestions for testing and debugging
 
+Writing assembly language code is challenging.  We recommend that you work
+on your assembly language functions one at a time, starting from the
+simplest and working towards the more complicated ones.
+
+Running your unit tests against your assembly language functions
+(i.e., building and running `asm_textsearch_fns_tests`) is a good way to make progress
+on the assembly language part of the assignment (Milestones 2 and 3.)
+When you run into a test failure, debug the test program using `gdb`.
+When a test fails, set a breakpoint at the line of code which calls the
+function leading to the failed assertion.  Learn how to use `gdb` to
+inspect memory and registers. (The [lecture 8 slides](../lectures/lecture08-public.pdf)
+have some useful tips for using `gdb` to debug assembly code.)
+
+Once you have your assembly language helper function implementations completely
+working, you can work on implementing a `main` function in assembly language.
+
 # Submitting
 
 Before you submit, prepare a `README.txt` file so that it contains your
@@ -464,7 +480,7 @@ Run the following commands to create a `solution.zip` file:
 
 ```
 rm -f solution.zip
-zip -9r solution.zip Makefile *.h *.c README.txt
+zip -9r solution.zip Makefile *.h *.c *.S README.txt
 ```
 
 Upload `solution.zip` to [Gradescope](https://www.gradescope.com/)
