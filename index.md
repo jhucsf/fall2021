@@ -21,6 +21,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Sep 15** — The [slides](lectures/lecture07-public.pdf) and [example code](lectures/alu.zip) for Lecture 7 have been updated.
 * **Sep 14** — [Assignment 2](assign/assign02.html) has been posted. There are three milestones, due Tues Sep 21, Fri Sep 24, and Tues Oct 5.
 * **Sep 13** — [Assignment 1](assign/assign01.html) has been updated with a link to a Ruby script ([genfact.rb](assign/genfact.rb)) that you may use to help generate test cases for MS2.
 * **Sep 1** — [Assignment 1](assign/assign01.html) has been updated so that the comprehensiveness and quality of your unit tests are explicitly part of the grading criteria for Milestone 2.
