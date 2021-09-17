@@ -11,6 +11,9 @@ Milestone 3: due **Tuesday, Oct 5th** by 11pm
 
 Assignment type: **Pair**, you may work with one partner
 
+*Update*: There are two fixes to the original `Makefile` that you should
+apply: see [Makefile fixes](#makefile-fixes).
+
 # Overview
 
 In this assignment, you will implement a program to search for occurrences
@@ -56,6 +59,35 @@ curl -O https://jhucsf.github.io/fall2021/assign/csf_assign02.zip
 ```
 
 Note that in the `-O` option, it is the letter "O", not the numeral "0".
+
+### Makefile fixes
+
+The original `Makefile` had two omissions. We strongly recommend that you apply
+the following fixes.
+
+Change the line
+
+```make
+ASMFLAGS = -no-pie
+```
+
+to
+
+```make
+ASMFLAGS = -no-pie -g
+```
+
+Also, change the line
+
+```make
+EXES =
+```
+
+to
+
+```make
+EXES = c_textsearch asm_textsearch c_textsearch_fns_tests asm_textsearch_fns_tests
+```
 
 # Text search
 
