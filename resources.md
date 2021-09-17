@@ -12,10 +12,15 @@ This section has links to some information resources you might find useful.
 
 ## Practice problems and exams
 
-*Coming soon!*
+Review materials for Exam 1:
+
+* [Exam 1 practice questions](resources/exam1review.html), [Solutions](resources/exam1review-solutions.html)
+* [Midterm, Spring 2020](resources/midterm-spring2020.pdf) (Questions 1–3), [Solution](resources/midterm-spring2020-soln.pdf)
+* [Assembly language mini-exercises](resources/assemblyMini.html)
+* [Assembly language exercise](resources/assembly.html), [solution](resources/asmExerciseSoln.zip)
+* [Assembly language exercise 2 (more challenging)](resources/assembly2.html)
 
 <!--
-* [Midterm, Spring 2020](resources/midterm-spring2020.pdf), [Solution](resources/midterm-spring2020-soln.pdf)
 * [Exam 1 practice questions](resources/exam1review.html), [Answers](resources/exam1review-solutions.html)
 * [Assembly language mini-exercises](resources/assemblyMini.html)
 * [Assembly language exercise](resources/assembly.html), [solution](resources/asmExerciseSoln.zip)
