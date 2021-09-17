@@ -12,7 +12,7 @@ category: "syllabus"
 
 ## Instructor
 
-[David Hovemeyer](https://www.cs.jhu.edu/~daveho)
+[David Hovemeyer](https://www.cs.jhu.edu/~daveho) <mailto:daveho@cs.jhu.edu>
 
 Office: Malone 240A
 
@@ -20,7 +20,21 @@ Office hours: T/Th 1-3pm, or by arrangement (email me), via Zoom (see Campuswire
 
 ## Course Assistants
 
-Coming soon!
+Head CAs:
+
+* Ryan Rubel <mailto:rrubel1@jhu.edu>
+* Max Hahn <mailto:mhahn12@jhu.edu>
+
+CAs:
+
+* Adyant Balaji <mailto:abalaji2@jhu.edu>
+* Simone Bliss <mailto:sbliss5@jhu.edu>
+* Jason Kurlander <mailto:jkurlan3@jhu.edu>
+* Susan Liu <mailto:sliu151@jhu.edu>
+* David Skaff <mailto:dskaff1@jhu.edu>
+* Alex Wei <mailto:awei11@jhu.edu>
+* Gary Yang <mailto:yyang117@jhu.edu>
+* Lucy Zhang <mailto:wzhang99@jhu.edu>
 
 ## Meeting
 
