@@ -24,4 +24,4 @@ Please read the [style guidelines](assign/style.html) so that you know what our 
 Assignment | Type | Due
 ---------- | :--: | ---
 [Assignment 1: Fixed-point arithmetic](assign/assign01.html) | Pair | MS1 due Tues, Sep 7<br>MS2 due Tues, Sep 14
-[Assignment 2: Text Search](assign/assign02.html) | Pair | MS1 due Tues, Sep 21<br>MS2 due Fri, Sep 24<br>MS3 due Tues, Oct 5
+[Assignment 2: Text Search](assign/assign02.html) | Pair | MS1 due Tues, Sep 21<br>MS2 due Tues, Sep 28<br>MS3 due Tues, Oct 5

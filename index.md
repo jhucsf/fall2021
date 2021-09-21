@@ -21,6 +21,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Sep 21** — The deadline for [Assignment 2, Milestone 2](assign/assign02.html#milestone-2) has been changed to **Tuesday, Sep 28th** by 11pm.
 * **Sep 17** — See the [Makefile fixes](assign/assign02.html#makefile-fixes) section of [Assignment 2](assign/assign02.html) for two important corrections you should make to the `Makefile`.
 * **Sep 17** — The [Resources](resources.html) page has been updated with practice materials for Exam 1.
 * **Sep 17** — The [slides](lectures/lecture08-public.pdf) and [example code](lectures/control.zip) for Lecture 8 have been updated.
