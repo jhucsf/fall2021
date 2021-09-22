@@ -11,8 +11,12 @@ Milestone 3: due **Tuesday, Oct 5th** by 11pm
 
 Assignment type: **Pair**, you may work with one partner
 
-*Update*: There are two fixes to the original `Makefile` that you should
+*Update 9/17*: There are two fixes to the original `Makefile` that you should
 apply: see [Makefile fixes](#makefile-fixes).
+
+*Update 9/22*: See the [Accessing standard I/O handles](#accessing-standard-io-handles)
+section for information about how to access standard
+I/O handles (`stdout`, `stderr`, etc.) from assembly code.
 
 # Overview
 
@@ -416,6 +420,30 @@ first_occur:
 Note that the function above also illustrates what we consider to be an
 appropriate amount of detail for code comments.
 
+### Accessing standard I/O handles
+
+If you need to pass a standard I/O handle such as `stdout` or `stderr`
+to one another function (such as `fprintf`, `print_line`, etc.), do so as
+shown in the following program:
+
+```
+	.section .rodata
+
+s_msg: .string "Text printed to stderr\n"
+
+	.section .text
+
+	.globl main
+main:
+	subq $8, %rsp
+	movl $0, %eax
+	movq stderr(%rip), %rdi /* pass stderr */
+	movq $s_msg, %rsi       /* pass message string */
+	call fprintf
+	movl $0, %eax
+	addq $8, %rsp
+	ret
+```
 
 ## Suggestions for writing unit tests
 
