@@ -21,6 +21,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Sep 24** — The unit tests for today's in-class assembly language exercise is [str\_upcase.zip](lectures/str_upcase.zip).
 * **Sep 22** — [Assignment 2](assign/assign02.html) has been updated to show how to pass standard I/O handles (such as `stderr`) to a function in assembly language.
 * **Sep 21** — The deadline for [Assignment 2, Milestone 2](assign/assign02.html#milestone-2) has been changed to **Tuesday, Sep 28th** by 11pm.
 * **Sep 17** — See the [Makefile fixes](assign/assign02.html#makefile-fixes) section of [Assignment 2](assign/assign02.html) for two important corrections you should make to the `Makefile`.
