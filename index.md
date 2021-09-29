@@ -21,6 +21,8 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Sep 29** — [refsheet.pdf](resources/refsheet.pdf) is the reference sheet that will be included
+  on Exam 1 (which takes place on Friday Oct 1st in Shaffer 3.)
 * **Sep 24** — The unit tests for today's in-class assembly language exercise are in the following zipfile: [str\_upcase.zip](lectures/str_upcase.zip).
 * **Sep 22** — [Assignment 2](assign/assign02.html) has been updated to show how to pass standard I/O handles (such as `stderr`) to a function in assembly language.
 * **Sep 21** — The deadline for [Assignment 2, Milestone 2](assign/assign02.html#milestone-2) has been changed to **Tuesday, Sep 28th** by 11pm.
