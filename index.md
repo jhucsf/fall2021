@@ -21,6 +21,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Oct 1** — The [Schedule](schedule.html) has been updated. Also note that the slides for lecturs 12, 14, and 17 have been uploaded to the Files section of the Campuswire site.
 * **Sep 29** — [refsheet.pdf](resources/refsheet.pdf) is the reference sheet that will be included
   on Exam 1 (which takes place on Friday Oct 1st in Shaffer 3.)
 * **Sep 24** — The unit tests for today's in-class assembly language exercise are in the following zipfile: [str\_upcase.zip](lectures/str_upcase.zip).
