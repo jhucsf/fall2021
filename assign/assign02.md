@@ -7,7 +7,7 @@ Milestone 1: due **Tuesday, Sept 21st** by 11pm
 
 Milestone 2: due <strike>Friday, Sept 24th</strike> **Tuesday, Sep 28th** by 11pm
 
-Milestone 3: due **Tuesday, Oct 5th** by 11pm
+Milestone 3: due <strike>Tuesday, Oct 5th</strike> **Thursday, Oct 7th** by 11pm
 
 Assignment type: **Pair**, you may work with one partner
 

@@ -21,6 +21,8 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Oct 4** — The due date for Milestone 3 of [Assignment 2](assign/assign02.html)
+  has been changed to **Thursday, Oct 7th** by 11pm.
 * **Oct 1** — The [Schedule](schedule.html) has been updated. Also note that the slides for lectures 12, 14, and 17 have been uploaded to the Files section of the Campuswire site.
 * **Sep 29** — [refsheet.pdf](resources/refsheet.pdf) is the reference sheet that will be included
   on Exam 1 (which takes place on Friday Oct 1st in Shaffer 3.)
