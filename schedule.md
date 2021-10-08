@@ -41,14 +41,14 @@ Oct 1              | **Exam 1** in class
 Oct 4             | Program optimization (basic techniques): see Campuswire for slides | 5.1–5.8 | A2 MS3 due Tues 10/5
 Oct 6             | Pipelines: [slides](lectures/lecture13-public.pdf) | Patterson&amp;Hennessy 4.5–4.7 | 
 Oct 8              | Program optimization (ILP, memory, profiling): see Campuswire for slides | 5.9–5.14 |
-Oct 11              | Memory hierarchy: [slides](lectures/lecture15-public.pdf) | 6.1–6.3 | 
+Oct 11              | Memory hierarchy: [slides](lectures/lecture15-public.pdf) | 6.1–6.3 | A3 MS1 due Tues 10/12
 Oct 13              | Cache policies: [slides](lectures/lecture16-public.pdf) | 6.4
 Oct 15              | Caches and program execution: see Campuswire for slides | 6.5 |
 Oct 18             | Linking basics, symbols, relocations, executables, loading: [slides](lectures/lecture18-public.pdf) | 7.1–7.9 |
-Oct 20             | Dynamic linking, shared libraries, PIC, interpositioning: [slides](lectures/lecture19-public.pdf), [dynload.zip (example code)](lectures/dynload.zip) | 7.10–7.15 |
+Oct 20             | Dynamic linking, shared libraries, PIC, interpositioning: [slides](lectures/lecture19-public.pdf), [dynload.zip (example code)](lectures/dynload.zip) | 7.10–7.15 | A3 MS2 due Thurs 10/21
 Oct 22             | Exceptions, Processes: [slides](lectures/lecture20-public.pdf) | 8.1–8.4, 8.7 |
 Oct 25             | Signals: [slides](lectures/lecture21-public.pdf), [signals.zip (example code)](lectures/signals.zip) | 8.5–8.6 | 
-Oct 27             | Virtual memory: [slides](lectures/lecture22-public.pdf) | 9.1–9.3 | 
+Oct 27             | Virtual memory: [slides](lectures/lecture22-public.pdf) | 9.1–9.3 | A3 MS3 due Thurs 10/28
 Oct 29             | Memory management, address translation: [slides](lectures/lecture23-public.pdf) | 9.4–9.7
 Nov 1             | Memory mapping, dynamic memory allocation: [slides](lectures/lecture24-public.pdf) | 9.8, 9.9, 9.11 |
 Nov 3             | Exam 2 review session
