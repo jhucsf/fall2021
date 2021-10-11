@@ -21,6 +21,8 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Oct 11** — [Assignment 3](assign/assign03.html) has been updated to explain the requirements
+  for reporting invalid configuration parameters.
 * **Oct 8** — [Assignment 3](assign/assign03.html) has been posted. It has three milestones, due
   Tuesday Oct 12th, Thursday Oct 21st, and Thursday Oct 28th, respectively.
 * **Oct 4** — The due date for Milestone 3 of [Assignment 2](assign/assign02.html)

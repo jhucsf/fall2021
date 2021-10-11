@@ -18,6 +18,10 @@ special permission (**both partners must have late days to use**). If
 you anticipate using more than 48 late hours, please post privately
 (to instructors and TAs) on Campuswire to request permission.
 
+*Update 10/11*: clarify expectations for
+[reporting invalid cache parameters](#reporting-invalid-cache-parameters),
+correction to compiler options
+
 # Cache simulator
 
 **Acknowledgment**: This assignment was originally developed by
@@ -100,7 +104,7 @@ You must provide a `Makefile` such that
 * `make clean` removes all object files and executables, and
 * `make` or `make csim` compiles and links your program, producing an executable called `csim`
 
-Your code should compile cleanly with gcc 7.x using the `-Wall -Wextra --pedantic` compiler flags.
+Your code should compile cleanly with gcc 7.x using the `-Wall -Wextra -pedantic` compiler flags.
 **Important**: your `Makefile` **must** use these options.  If your `Makefile`
 does *not* compile your code with these options, you will forfeit all of
 the points for design and coding style.
@@ -261,8 +265,24 @@ simulator specification, your `Total cycles` value could be slightly different,
 but should be fairly close.  For all of the other counts, your simulator's
 output should exactly match the output above.
 
-We **strongly** encourage you to use Piazza to post traces and simulator results,
+We **strongly** encourage you to use Campuswire to post traces and simulator results,
 so that you can compare your results with other students' results.
+
+### Reporting invalid cache parameters
+
+Before starting the simulation, your simulator should check to make sure
+that the simulation parameters are reasonable.  Examples of invalid
+configuration parameters include (but are not limited to):
+
+* block size is not a power of 2
+* number of sets is not a power of 2
+* block size is less than 4
+* `write-back` and `no-write-allocate` were both specified
+
+If the configuration parameters are invalid, the program should
+
+1. Print an error message to `stderr` or `std::cerr`, and
+2. Exit with a non-zero exit code
 
 ### Example traces
 
