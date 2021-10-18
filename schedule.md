@@ -37,7 +37,7 @@ Sep 22             | Arrays and structs: [slides](lectures/lecture10-public.pdf)
 Sep 24             | Assembly language in class exercise: [slides](lectures/assembly-exercise-public.pdf) | | 
 Sep 27             | Code and data interactions, buffer overflows: [slides](lectures/lecture11-public.pdf), [buf.zip (example code)](lectures/buf.zip) | 3.10 | A2 MS2 due Tues 9/28
 Sep 29             | Exam 1 review session
-Oct 1              | **Exam 1** in class
+Oct 1              | **Exam 1** in class (in Shaffer 3)
 Oct 4             | Program optimization (basic techniques): see Campuswire for slides | 5.1–5.8 | A2 MS3 due Tues 10/5
 Oct 6             | Pipelines: [slides](lectures/lecture13-public.pdf) | Patterson&amp;Hennessy 4.5–4.7 | 
 Oct 8              | Program optimization (ILP, memory, profiling): see Campuswire for slides | 5.9–5.14 |
@@ -45,23 +45,23 @@ Oct 11              | Memory hierarchy: [slides](lectures/lecture15-public.pdf) 
 Oct 13              | Cache policies: [slides](lectures/lecture16-public.pdf) | 6.4
 Oct 15              | Caches and program execution: see Campuswire for slides | 6.5 |
 Oct 18             | Linking basics, symbols, relocations, executables, loading: [slides](lectures/lecture18-public.pdf) | 7.1–7.9 |
-Oct 20             | Dynamic linking, shared libraries, PIC, interpositioning: [slides](lectures/lecture19-public.pdf), [dynload.zip (example code)](lectures/dynload.zip) | 7.10–7.15 | A3 MS2 due Thurs 10/21
+Oct 20             | Dynamic linking, shared libraries, PIC, interpositioning: [slides](lectures/lecture19-public.pdf), [dynload.zip (example code)](lectures/dynload.zip) | 7.10–7.15 |
 Oct 22             | Exceptions, Processes: [slides](lectures/lecture20-public.pdf) | 8.1–8.4, 8.7 |
-Oct 25             | Signals: [slides](lectures/lecture21-public.pdf), [signals.zip (example code)](lectures/signals.zip) | 8.5–8.6 | 
-Oct 27             | Virtual memory: [slides](lectures/lecture22-public.pdf) | 9.1–9.3 | A3 MS3 due Thurs 10/28
-Oct 29             | Memory management, address translation: [slides](lectures/lecture23-public.pdf) | 9.4–9.7
-Nov 1             | Memory mapping, dynamic memory allocation: [slides](lectures/lecture24-public.pdf) | 9.8, 9.9, 9.11 |
+Oct 25             | Signals: [slides](lectures/lecture21-public.pdf), [signals.zip (example code)](lectures/signals.zip) | 8.5–8.6 |  A3 MS2 due Tues 10/26
+Oct 27             | Virtual memory: [slides](lectures/lecture22-public.pdf) | 9.1–9.3 |
+Oct 29             | Memory management, address translation: [slides](lectures/lecture23-public.pdf) | 9.4–9.7 |
+Nov 1             | Memory mapping, dynamic memory allocation: [slides](lectures/lecture24-public.pdf) | 9.8, 9.9, 9.11 | A3 MS3 due Tues 11/2
 Nov 3             | Exam 2 review session
-Nov 5              | **Exam 2** in class
+Nov 5              | **Exam 2** in class (in Shaffer 3)
 Nov 8             | Unix I/O, files: [slides](lectures/lecture25-public.pdf) | 10.1–10.11 |
-Nov 10              | Networks, Internet Protocol: [slides](lectures/lecture26-public.pdf) | 11.1–11.3 | 
+Nov 10              | Networks, Internet Protocol: [slides](lectures/lecture26-public.pdf) | 11.1–11.3 | <span class="tentative">A4 due Thurs 11/11</span>
 Nov 12              | Sockets, Application Protocols: [slides](lectures/lecture27-public.pdf), [sockets.zip (example code)](lectures/sockets.zip) | 11.4 |
 Nov 15              | Network applications, HTTP: [slides](lectures/lecture28-public.pdf), [webserver.zip (example code)](lectures/webserver.zip) | 11.4–11.6 | 
 Nov 17              | Concurrency with processes: [slides](lectures/lecture29-public.pdf), [mp\_webserver.zip (example code)](lectures/mp_webserver.zip) | 12.1 | 
-Nov 19             | Concurrency with threads: [slides](lectures/lecture30-public.pdf), [mt\_webserver.zip (example code)](lectures/mt_webserver.zip), [mandelbrot.zip (example code)](lectures/mandelbrot.zip) | 12.3 | 
+Nov 19             | Concurrency with threads: [slides](lectures/lecture30-public.pdf), [mt\_webserver.zip (example code)](lectures/mt_webserver.zip), [mandelbrot.zip (example code)](lectures/mandelbrot.zip) | 12.3 | <span class="tentative">A5 due</span>
 Nov 22–26          | *Thanksgiving vacation, no class*
 Nov 29             | Thread synchronization: [slides](lectures/lecture31-public.pdf), [synch.zip (example code)](lectures/synch.zip) | 12.4–12.5
 Dec 1             | Concurrency with I/O multiplexing: [slides](lectures/lecture32-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | 12.2 | 
 Dec 3             | Parallelism, concurrency issues: [slides](lectures/lecture33-public.pdf), [synch2.zip (example code)](lectures/synch2.zip) | 12.6–12.7 |
-Dec 6             | Final exam review session | | 
-Dec 16<br>(9am-12pm)   | **Exam 3** (during scheduled final exam time slot)
+Dec 6             | Final exam review session | | <span class="tentative">A6 due</span>
+Dec 16<br>(9am-12pm)   | **Exam 3** (during scheduled final exam time slot, location TBD)

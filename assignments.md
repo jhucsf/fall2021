@@ -25,4 +25,4 @@ Assignment | Type | Due
 ---------- | :--: | ---
 [Assignment 1: Fixed-point arithmetic](assign/assign01.html) | Pair | MS1 due Tues, Sep 7<br>MS2 due Tues, Sep 14
 [Assignment 2: Text Search](assign/assign02.html) | Pair | MS1 due Tues, Sep 21<br>MS2 due Tues, Sep 28<br>MS3 due Thurs, Oct 7
-[Assignment 3: Cache simulator](assign/assign03.html) | Pair | MS1 due Tues, Oct 12<br>MS2 due Thurs, Oct 21<br>MS3 due Thurs, Oct 28
+[Assignment 3: Cache simulator](assign/assign03.html) | Pair | MS1 due Tues, Oct 12<br>MS2 due Tues, Oct 26<br>MS3 due Tues, Nov 2
