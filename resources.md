@@ -20,6 +20,12 @@ Review materials for Exam 1:
 * [Assembly language exercise](resources/assembly.html), [solution](resources/asmExerciseSoln.zip)
 * [Assembly language exercise 2 (more challenging)](resources/assembly2.html)
 
+Review materials for Exam 2:
+
+* [Exam 2 practice questiuons](resources/exam2review.html)
+* [Midterm, Spring 2020](resources/midterm-spring2020.pdf) (Question 4)
+* [Final exam, Spring 2020](resources/final-spring2020.pdf) (Questions 1–3)
+
 <!--
 * [Exam 1 practice questions](resources/exam1review.html), [Answers](resources/exam1review-solutions.html)
 * [Assembly language mini-exercises](resources/assemblyMini.html)
