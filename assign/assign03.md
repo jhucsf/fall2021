@@ -7,7 +7,7 @@ title: "Assignment 3: Cache simulator"
 
 * Milestone 1: Tuesday, Oct 12th by 11pm (no late hours)
 
-* Milestone 2: <strike>Thursday, Oct 21st</strike> Tuesday, Oct 26th by 11pm (no late hours)
+* Milestone 2: <strike>Thursday, Oct 21st</strike> Tuesday, Oct 26th by 11pm (max 48 late hours)
 
 * Milestone 3: <strike>Thursday, Oct 28th</strike> Tuesday, Nov 2nd by 11pm (max 48 late hours; more with permission only)
 
