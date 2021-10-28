@@ -63,12 +63,12 @@ Milestone grades will be determined as a combination of effort and code
 functionality. Your final grade will be determined as follows:
 
 * Gracefully handling invalid parameters: 1.5%
-* Accurate load count: 7.5%
-* Accurate store count: 7.5%
-* Accurate load hits: 12%
-* Accurate load misses: 12%
-* Accurate store hits: 12%
-* Accurate store misses: 12%
+* Accurate load count: 9%
+* Accurate store count: 9%
+* Accurate load hits: 12.5%
+* Accurate load misses: 12.5%
+* Accurate store hits: 12.5%
+* Accurate store misses: 12.5%
 * Accurate total cycles: 5.5%
 * Report on best cache: 10%
 * Design, coding style, and contributions: 10%
