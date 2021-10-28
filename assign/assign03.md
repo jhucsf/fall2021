@@ -72,7 +72,7 @@ functionality. Your final grade will be determined as follows:
 * Accurate total cycles: 5.5%
 * Report on best cache: 10%
 * Design, coding style, and contributions: 10%
-* Effort shown in Milestone 1: 10%
+* Effort shown in Milestone 1: 5%
 
 For the numeric results, the `Total cycles` output only needs to be
 within &plusmn;10%, while the other results must be exact.
