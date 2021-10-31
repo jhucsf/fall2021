@@ -1,0 +1,102 @@
+Object file type: ET_DYN
+Instruction set: AMD x86-64
+Endianness: Little endian
+Section header 0: name=, type=0, offset=0, size=0
+Section header 1: name=.interp, type=1, offset=318, size=1c
+Section header 2: name=.note.gnu.property, type=7, offset=338, size=20
+Section header 3: name=.note.gnu.build-id, type=7, offset=358, size=24
+Section header 4: name=.note.ABI-tag, type=7, offset=37c, size=20
+Section header 5: name=.gnu.hash, type=6ffffff6, offset=3a0, size=24
+Section header 6: name=.dynsym, type=b, offset=3c8, size=c0
+Section header 7: name=.dynstr, type=3, offset=488, size=9f
+Section header 8: name=.gnu.version, type=6fffffff, offset=528, size=10
+Section header 9: name=.gnu.version_r, type=6ffffffe, offset=538, size=30
+Section header 10: name=.rela.dyn, type=4, offset=568, size=c0
+Section header 11: name=.rela.plt, type=4, offset=628, size=30
+Section header 12: name=.init, type=1, offset=1000, size=1b
+Section header 13: name=.plt, type=1, offset=1020, size=30
+Section header 14: name=.plt.got, type=1, offset=1050, size=10
+Section header 15: name=.plt.sec, type=1, offset=1060, size=20
+Section header 16: name=.text, type=1, offset=1080, size=2c5
+Section header 17: name=.fini, type=1, offset=1348, size=d
+Section header 18: name=.rodata, type=1, offset=2000, size=18
+Section header 19: name=.eh_frame_hdr, type=1, offset=2018, size=54
+Section header 20: name=.eh_frame, type=1, offset=2070, size=148
+Section header 21: name=.init_array, type=e, offset=2db0, size=8
+Section header 22: name=.fini_array, type=f, offset=2db8, size=8
+Section header 23: name=.dynamic, type=6, offset=2dc0, size=1f0
+Section header 24: name=.got, type=1, offset=2fb0, size=50
+Section header 25: name=.data, type=1, offset=3000, size=10
+Section header 26: name=.bss, type=8, offset=3010, size=8
+Section header 27: name=.comment, type=1, offset=3010, size=2a
+Section header 28: name=.symtab, type=2, offset=3040, size=660
+Section header 29: name=.strtab, type=3, offset=36a0, size=23f
+Section header 30: name=.shstrtab, type=3, offset=38df, size=11a
+Symbol 0: name=, size=0, info=0, other=0
+Symbol 1: name=, size=0, info=3, other=0
+Symbol 2: name=, size=0, info=3, other=0
+Symbol 3: name=, size=0, info=3, other=0
+Symbol 4: name=, size=0, info=3, other=0
+Symbol 5: name=, size=0, info=3, other=0
+Symbol 6: name=, size=0, info=3, other=0
+Symbol 7: name=, size=0, info=3, other=0
+Symbol 8: name=, size=0, info=3, other=0
+Symbol 9: name=, size=0, info=3, other=0
+Symbol 10: name=, size=0, info=3, other=0
+Symbol 11: name=, size=0, info=3, other=0
+Symbol 12: name=, size=0, info=3, other=0
+Symbol 13: name=, size=0, info=3, other=0
+Symbol 14: name=, size=0, info=3, other=0
+Symbol 15: name=, size=0, info=3, other=0
+Symbol 16: name=, size=0, info=3, other=0
+Symbol 17: name=, size=0, info=3, other=0
+Symbol 18: name=, size=0, info=3, other=0
+Symbol 19: name=, size=0, info=3, other=0
+Symbol 20: name=, size=0, info=3, other=0
+Symbol 21: name=, size=0, info=3, other=0
+Symbol 22: name=, size=0, info=3, other=0
+Symbol 23: name=, size=0, info=3, other=0
+Symbol 24: name=, size=0, info=3, other=0
+Symbol 25: name=, size=0, info=3, other=0
+Symbol 26: name=, size=0, info=3, other=0
+Symbol 27: name=, size=0, info=3, other=0
+Symbol 28: name=crtstuff.c, size=0, info=4, other=0
+Symbol 29: name=deregister_tm_clones, size=0, info=2, other=0
+Symbol 30: name=register_tm_clones, size=0, info=2, other=0
+Symbol 31: name=__do_global_dtors_aux, size=0, info=2, other=0
+Symbol 32: name=completed.8060, size=1, info=1, other=0
+Symbol 33: name=__do_global_dtors_aux_fini_array_entry, size=0, info=1, other=0
+Symbol 34: name=frame_dummy, size=0, info=2, other=0
+Symbol 35: name=__frame_dummy_init_array_entry, size=0, info=1, other=0
+Symbol 36: name=sumarr.c, size=0, info=4, other=0
+Symbol 37: name=crtstuff.c, size=0, info=4, other=0
+Symbol 38: name=__FRAME_END__, size=0, info=1, other=0
+Symbol 39: name=, size=0, info=4, other=0
+Symbol 40: name=__init_array_end, size=0, info=0, other=0
+Symbol 41: name=_DYNAMIC, size=0, info=1, other=0
+Symbol 42: name=__init_array_start, size=0, info=0, other=0
+Symbol 43: name=__GNU_EH_FRAME_HDR, size=0, info=0, other=0
+Symbol 44: name=_GLOBAL_OFFSET_TABLE_, size=0, info=1, other=0
+Symbol 45: name=_init, size=0, info=2, other=0
+Symbol 46: name=__libc_csu_fini, size=5, info=12, other=0
+Symbol 47: name=sumarr_float, size=58, info=12, other=0
+Symbol 48: name=_ITM_deregisterTMCloneTable, size=0, info=20, other=0
+Symbol 49: name=data_start, size=0, info=20, other=0
+Symbol 50: name=_edata, size=0, info=10, other=0
+Symbol 51: name=_fini, size=0, info=12, other=2
+Symbol 52: name=__stack_chk_fail@@GLIBC_2.4, size=0, info=12, other=0
+Symbol 53: name=printf@@GLIBC_2.2.5, size=0, info=12, other=0
+Symbol 54: name=__libc_start_main@@GLIBC_2.2.5, size=0, info=12, other=0
+Symbol 55: name=__data_start, size=0, info=10, other=0
+Symbol 56: name=sumarr_unsigned, size=47, info=12, other=0
+Symbol 57: name=__gmon_start__, size=0, info=20, other=0
+Symbol 58: name=__dso_handle, size=0, info=11, other=2
+Symbol 59: name=_IO_stdin_used, size=4, info=11, other=0
+Symbol 60: name=__libc_csu_init, size=65, info=12, other=0
+Symbol 61: name=_end, size=0, info=10, other=0
+Symbol 62: name=_start, size=2f, info=12, other=0
+Symbol 63: name=__bss_start, size=0, info=10, other=0
+Symbol 64: name=main, size=c3, info=12, other=0
+Symbol 65: name=__TMC_END__, size=0, info=11, other=2
+Symbol 66: name=_ITM_registerTMCloneTable, size=0, info=20, other=0
+Symbol 67: name=__cxa_finalize@@GLIBC_2.2.5, size=0, info=22, other=0

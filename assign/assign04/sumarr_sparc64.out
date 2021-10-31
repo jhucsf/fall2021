@@ -1,0 +1,103 @@
+Object file type: ET_EXEC
+Instruction set: SPARC Version 9
+Endianness: Big endian
+Section header 0: name=, type=0, offset=0, size=0
+Section header 1: name=.interp, type=1, offset=200, size=15
+Section header 2: name=.note.gnu.build-id, type=7, offset=218, size=24
+Section header 3: name=.note.ABI-tag, type=7, offset=23c, size=20
+Section header 4: name=.hash, type=5, offset=260, size=30
+Section header 5: name=.gnu.hash, type=6ffffff6, offset=290, size=30
+Section header 6: name=.dynsym, type=b, offset=2c0, size=a8
+Section header 7: name=.dynstr, type=3, offset=368, size=58
+Section header 8: name=.gnu.version, type=6fffffff, offset=3c0, size=e
+Section header 9: name=.gnu.version_r, type=6ffffffe, offset=3d0, size=30
+Section header 10: name=.rela.dyn, type=4, offset=400, size=18
+Section header 11: name=.rela.plt, type=4, offset=418, size=60
+Section header 12: name=.init, type=1, offset=478, size=48
+Section header 13: name=.text, type=1, offset=4c0, size=514
+Section header 14: name=.fini, type=1, offset=9d4, size=14
+Section header 15: name=.rodata, type=1, offset=9e8, size=28
+Section header 16: name=.eh_frame, type=1, offset=a10, size=4
+Section header 17: name=.ctors, type=1, offset=1e20, size=10
+Section header 18: name=.dtors, type=1, offset=1e30, size=10
+Section header 19: name=.dynamic, type=6, offset=1e40, size=1c0
+Section header 20: name=.got, type=1, offset=2000, size=20
+Section header 21: name=.plt, type=1, offset=2100, size=100
+Section header 22: name=.data, type=1, offset=2200, size=10
+Section header 23: name=.bss, type=8, offset=2210, size=10
+Section header 24: name=.comment, type=1, offset=2210, size=2a
+Section header 25: name=.symtab, type=2, offset=2240, size=6c0
+Section header 26: name=.strtab, type=3, offset=2900, size=22b
+Section header 27: name=.shstrtab, type=3, offset=2b2b, size=e2
+Symbol 0: name=, size=0, info=0, other=0
+Symbol 1: name=, size=0, info=3, other=0
+Symbol 2: name=, size=0, info=3, other=0
+Symbol 3: name=, size=0, info=3, other=0
+Symbol 4: name=, size=0, info=3, other=0
+Symbol 5: name=, size=0, info=3, other=0
+Symbol 6: name=, size=0, info=3, other=0
+Symbol 7: name=, size=0, info=3, other=0
+Symbol 8: name=, size=0, info=3, other=0
+Symbol 9: name=, size=0, info=3, other=0
+Symbol 10: name=, size=0, info=3, other=0
+Symbol 11: name=, size=0, info=3, other=0
+Symbol 12: name=, size=0, info=3, other=0
+Symbol 13: name=, size=0, info=3, other=0
+Symbol 14: name=, size=0, info=3, other=0
+Symbol 15: name=, size=0, info=3, other=0
+Symbol 16: name=, size=0, info=3, other=0
+Symbol 17: name=, size=0, info=3, other=0
+Symbol 18: name=, size=0, info=3, other=0
+Symbol 19: name=, size=0, info=3, other=0
+Symbol 20: name=, size=0, info=3, other=0
+Symbol 21: name=, size=0, info=3, other=0
+Symbol 22: name=, size=0, info=3, other=0
+Symbol 23: name=, size=0, info=3, other=0
+Symbol 24: name=, size=0, info=3, other=0
+Symbol 25: name=crtstuff.c, size=0, info=4, other=0
+Symbol 26: name=__CTOR_LIST__, size=0, info=1, other=0
+Symbol 27: name=__DTOR_LIST__, size=0, info=1, other=0
+Symbol 28: name=deregister_tm_clones, size=0, info=2, other=0
+Symbol 29: name=register_tm_clones, size=0, info=2, other=0
+Symbol 30: name=__do_global_dtors_aux, size=0, info=2, other=0
+Symbol 31: name=completed.6889, size=1, info=1, other=0
+Symbol 32: name=dtor_idx.6891, size=8, info=1, other=0
+Symbol 33: name=call___do_global_dtors_aux, size=0, info=2, other=0
+Symbol 34: name=frame_dummy, size=0, info=2, other=0
+Symbol 35: name=call_frame_dummy, size=0, info=2, other=0
+Symbol 36: name=crtstuff.c, size=0, info=4, other=0
+Symbol 37: name=__CTOR_END__, size=0, info=1, other=0
+Symbol 38: name=__FRAME_END__, size=0, info=1, other=0
+Symbol 39: name=__do_global_ctors_aux, size=0, info=2, other=0
+Symbol 40: name=call___do_global_ctors_aux, size=0, info=2, other=0
+Symbol 41: name=sumarr.c, size=0, info=4, other=0
+Symbol 42: name=, size=0, info=4, other=0
+Symbol 43: name=_PROCEDURE_LINKAGE_TABLE_, size=0, info=1, other=0
+Symbol 44: name=__init_array_end, size=0, info=0, other=0
+Symbol 45: name=_DYNAMIC, size=0, info=1, other=0
+Symbol 46: name=__init_array_start, size=0, info=0, other=0
+Symbol 47: name=_GLOBAL_OFFSET_TABLE_, size=0, info=1, other=0
+Symbol 48: name=__libc_csu_fini, size=c, info=12, other=0
+Symbol 49: name=sumarr_float, size=80, info=12, other=0
+Symbol 50: name=__sparc_get_pc_thunk.l7, size=0, info=22, other=2
+Symbol 51: name=data_start, size=0, info=20, other=0
+Symbol 52: name=printf@@GLIBC_2.2, size=0, info=12, other=0
+Symbol 53: name=_edata, size=0, info=10, other=0
+Symbol 54: name=_fini, size=0, info=12, other=2
+Symbol 55: name=__stack_chk_fail@@GLIBC_2.4, size=0, info=12, other=0
+Symbol 56: name=__DTOR_END__, size=0, info=11, other=2
+Symbol 57: name=__data_start, size=0, info=10, other=0
+Symbol 58: name=sumarr_unsigned, size=78, info=12, other=0
+Symbol 59: name=__gmon_start__, size=0, info=20, other=0
+Symbol 60: name=__dso_handle, size=0, info=11, other=2
+Symbol 61: name=_IO_stdin_used, size=4, info=11, other=0
+Symbol 62: name=__libc_start_main@@GLIBC_2.2, size=0, info=12, other=0
+Symbol 63: name=__libc_csu_init, size=68, info=12, other=0
+Symbol 64: name=_end, size=0, info=10, other=0
+Symbol 65: name=_start, size=38, info=12, other=0
+Symbol 66: name=__bss_start, size=0, info=10, other=0
+Symbol 67: name=main, size=100, info=12, other=0
+Symbol 68: name=__TMC_END__, size=0, info=11, other=2
+Symbol 69: name=_init, size=0, info=12, other=2
+Symbol 70: name=, size=0, info=1d, other=0
+Symbol 71: name=, size=0, info=1d, other=0

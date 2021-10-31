@@ -1,0 +1,29 @@
+Object file type: ET_REL
+Instruction set: SPARC Version 9
+Endianness: Big endian
+Section header 0: name=, type=0, offset=0, size=0
+Section header 1: name=.text, type=1, offset=40, size=1f8
+Section header 2: name=.rela.text, type=4, offset=438, size=198
+Section header 3: name=.data, type=1, offset=238, size=0
+Section header 4: name=.bss, type=8, offset=238, size=0
+Section header 5: name=.rodata, type=1, offset=238, size=20
+Section header 6: name=.comment, type=1, offset=258, size=2b
+Section header 7: name=.note.GNU-stack, type=1, offset=283, size=0
+Section header 8: name=.symtab, type=2, offset=288, size=168
+Section header 9: name=.strtab, type=3, offset=3f0, size=44
+Section header 10: name=.shstrtab, type=3, offset=5d0, size=52
+Symbol 0: name=, size=0, info=0, other=0
+Symbol 1: name=sumarr.c, size=0, info=4, other=0
+Symbol 2: name=, size=0, info=3, other=0
+Symbol 3: name=, size=0, info=3, other=0
+Symbol 4: name=, size=0, info=3, other=0
+Symbol 5: name=, size=0, info=3, other=0
+Symbol 6: name=, size=0, info=3, other=0
+Symbol 7: name=, size=0, info=3, other=0
+Symbol 8: name=sumarr_unsigned, size=78, info=12, other=0
+Symbol 9: name=, size=0, info=1d, other=0
+Symbol 10: name=sumarr_float, size=80, info=12, other=0
+Symbol 11: name=main, size=100, info=12, other=0
+Symbol 12: name=, size=0, info=1d, other=0
+Symbol 13: name=printf, size=0, info=10, other=0
+Symbol 14: name=__stack_chk_fail, size=0, info=10, other=0
