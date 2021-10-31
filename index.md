@@ -21,6 +21,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Oct 31** — Solutions for the exam 2 review problems are available on the [Resources](resources.html) page.
 * **Oct 25** — You may use up to 48 late hours on Milestone 2 of [Assignment 3](assign/assign03.html).
 * **Oct 25** — Exam 2 will take place in class (in Shaffer 3) on **Friday, Nov 5th**.
   Review materials are available on the [Resources](resources.html) page.
