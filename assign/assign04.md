@@ -36,5 +36,5 @@ These are the main requirements for your program:
 2. It should determine whether the opened file is an ELF file, and
    if not, print `Not an ELF file` to standard output and exit
    normally
-3. If it is an ELF file, it summarize the ELF header, sections, and
-   symbols (as described below)
+3. If it is an ELF file, it summarize the ELF header, program header,
+   sections, and symbols (as described below), and then exit normally
