@@ -217,17 +217,22 @@ Otherwise, the program should summarize the ELF header, summarize the section
 headers, and summarize the symbols, and then exit with an exit code of 0.
 
 To summarize the information in the ELF header, your program should
-print two lines of the form
+print three lines of the form
 
 <div class="highlighter-rouge"><pre>
 Object file type: <i>objtype</i>
 Instruction set: <i>machtype</i>
+Endianness: <i>endianness</i>
 </pre></div>
 
 For *objtype* and *machtype*, translate the values of the `e_type` and
 `e_machine` fields of the ELF header to strings using the
 `get_type_name` and `get_machine_name` functions defined in
 `elf_names.h` and `elf_names.c`/`elf_names.cpp`.
+
+For *endianness*, print either `Little endian` or `Big endian`.
+(Endianness is found in the `EI_DATA` element of the `e_ident`
+array in the ELF header.)
 
 After the ELF header summary, the program should print one line of output
 for each section, in the following format:

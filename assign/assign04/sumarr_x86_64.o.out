@@ -1,0 +1,33 @@
+Object file type: ET_REL
+Instruction set: AMD x86-64
+Endianness: Little endian
+Section header 0: name=, type=0, offset=0, size=0
+Section header 1: name=.text, type=1, offset=40, size=162
+Section header 2: name=.rela.text, type=4, offset=460, size=f0
+Section header 3: name=.data, type=1, offset=1a2, size=0
+Section header 4: name=.bss, type=8, offset=1a2, size=0
+Section header 5: name=.rodata, type=1, offset=1a4, size=14
+Section header 6: name=.comment, type=1, offset=1b8, size=2b
+Section header 7: name=.note.GNU-stack, type=1, offset=1e3, size=0
+Section header 8: name=.note.gnu.property, type=7, offset=1e8, size=20
+Section header 9: name=.eh_frame, type=1, offset=208, size=78
+Section header 10: name=.rela.eh_frame, type=4, offset=550, size=48
+Section header 11: name=.symtab, type=2, offset=280, size=180
+Section header 12: name=.strtab, type=3, offset=400, size=5a
+Section header 13: name=.shstrtab, type=3, offset=598, size=74
+Symbol 0: name=, size=0, info=0, other=0
+Symbol 1: name=sumarr.c, size=0, info=4, other=0
+Symbol 2: name=, size=0, info=3, other=0
+Symbol 3: name=, size=0, info=3, other=0
+Symbol 4: name=, size=0, info=3, other=0
+Symbol 5: name=, size=0, info=3, other=0
+Symbol 6: name=, size=0, info=3, other=0
+Symbol 7: name=, size=0, info=3, other=0
+Symbol 8: name=, size=0, info=3, other=0
+Symbol 9: name=, size=0, info=3, other=0
+Symbol 10: name=sumarr_unsigned, size=47, info=12, other=0
+Symbol 11: name=sumarr_float, size=58, info=12, other=0
+Symbol 12: name=main, size=c3, info=12, other=0
+Symbol 13: name=_GLOBAL_OFFSET_TABLE_, size=0, info=10, other=0
+Symbol 14: name=printf, size=0, info=10, other=0
+Symbol 15: name=__stack_chk_fail, size=0, info=10, other=0
