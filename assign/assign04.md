@@ -311,8 +311,8 @@ As noted in the [&lt;elf.h&gt;](#elfh) section, there are a separate set
 of data types for headers and symbol table entries in 32-bit ELF files.
 You will need to use these if the ELF file being analyzed is a 32-bit file.
 
-If the ELF file is big-endian, you will need to "byte swap" each data value
-that the program accessed, but reversing the bytes in its representation.
+If the ELF file is big-endian, you will need to "byte swap" each multi-byte data value
+that the program accessed, by reversing the bytes in its representation.
 This is based on the assumption that your program will be running on
 x86-64 Linux, which is a little-endian system.
 
