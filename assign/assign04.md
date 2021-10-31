@@ -148,7 +148,7 @@ printf(".shstrtab section index is %u\n", elf_header->e_shstrndx);
 \[One important detail to note here is that directly accessing fields of structs
 in a memory-mapped file will only yield the correct value if the byte ordering
 used in the file is the same as the byte ordering used by the system
-on which the program is running. As mentioned above, you may assume this
+on which the program is running. As mentioned earlier, you may assume this
 as a simplifying assumption in your code.\]
 
 Other important data types in `<elf.h>` include `Elf64_Shdr`, which describes
@@ -166,3 +166,92 @@ We highly recommend using the `unsigned char *` type as the data type for
 doing address computations.  Pointer arithmetic using this type will be in
 units of bytes, and if you access an `unsigned char` value using such a
 pointer, you are guaranteed to see an unsigned value.
+
+## Suggested approach
+
+Here is a suggested approach to finding the section and symbol table information:
+
+1. Find the section headers using the `e_shoff` value in the ELF header.
+   The number of section headers is indicated by the `e_shnum` value
+   in the ELF header.
+2. Use the `e_shstrndx` value in the ELF header to indicate which
+   section contains the string table with the names of the sections.
+   (This is the `.shstrtab` section.)
+3. Scan through the section headers, which will be objects of type
+   `Elf64_Shdr`.  In each section header, the `sh_offset` value indicates
+   the location of that section's data, the `sh_size` indicates the
+   size of the section's data, and the `sh_name` field is the offset of the
+   section's name string in the `.shstrtab` header.  Make a note of the name
+   of each section, and other required information. Based on your scan of
+   the section headers, you should be able to print the required output for
+   each section.  See [Required output](#required-output) below.
+4. The `.symtab` section is a sequence of `Elf64_Sym` objects.
+   Each one has an `st_name` field. The value of `st_name`, if it is not
+   0, is the offset of the symbol's name string in the `.strtab`
+   section data.  By scanning the symbols in the `.symtab` section data,
+   you should be able to print the required information for each
+   symbol.  (Again, see [Required output](#required-output).)
+
+## Required output
+
+Your program will be invoked as
+
+<div class="highlighter-rouge"><pre>
+./magic <i>filename</i>
+</pre></div>
+
+where *filename* is the file to analyze.  As a special case, if the file can't
+be opened or can't be mapped into memory, your program should print an
+error message to standard error and exit with a non-zero exit code.
+
+If the file being analyzed is not an ELF file, your program should simply
+print
+
+```
+Not an ELF file
+```
+
+to standard output and exit with an exit code of 0.
+
+Otherwise, the program should summarize the ELF header, summarize the section
+headers, and summarize the symbols, and then exit with an exit code of 0.
+
+To summarize the information in the ELF header, your program should
+print two lines of the form
+
+<div class="highlighter-rouge"><pre>
+Object file type: <i>objtype</i>
+Instruction set: <i>machtype</i>
+</pre></div>
+
+For *objtype* and *machtype*, translate the values of the `e_type` and
+`e_machine` fields of the ELF header to strings using the
+`get_type_name` and `get_machine_name` functions defined in
+`elf_names.h` and `elf_names.c`/`elf_names.cpp`.
+
+After the ELF header summary, the program should print one line of output
+for each section, in the following format:
+
+<div class="highlighter-rouge"><pre>
+Section header <i>N</i>: name=<i>name</i>, type=<i>X</i>, offset=<i>Y</i>, size=<i>Z</i>
+</pre></div>
+
+*N* is a section index in the range 0 to `e_shnum`-1.  *name* is the section
+name, which will be a NUL-terminated string value in the `.shstrtab` section
+data.  *X*, *Y*, *Z* are the values of the section header's `sh_type`,
+`sh_offset`, and `sh_size` values, respectively. Each of these values should
+be printed using the `%lx` conversion using `printf`.  Note that the name
+may be an empty string.
+
+After the summary of section headers, the program should print one line of
+output for each symbol, in the following format:
+
+<div class="highlighter-rouge"><pre>
+Symbol <i>N</i>: name=<i>name</i>, size=i<i>X</i>, info=<i>Y</i>, other=<i>Z</i>
+</pre></div>
+
+*N* is the index of the symbol (0 for first symbol), *name* is the name of the
+symbol based on the value of the symbol's `st_name` value (if non-zero, it specifies
+an offset in the `.strtab` section.) *X*, *Y*, *Z* are the values of the
+symbol's `st_size`, `st_info`, and `st_other` fields, respectively,
+printed using `printf` with the `%lx` conversion.
