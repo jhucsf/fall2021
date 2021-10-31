@@ -1,19 +1,6 @@
 Object file type: ET_DYN
 Instruction set: AMD x86-64
 Endianness: Little endian
-Program header 0: type=6, offset=40, vaddr=40, filesz=2d8, memsz=2d8
-Program header 1: type=3, offset=318, vaddr=318, filesz=1c, memsz=1c
-Program header 2: type=1, offset=0, vaddr=0, filesz=658, memsz=658
-Program header 3: type=1, offset=1000, vaddr=1000, filesz=355, memsz=355
-Program header 4: type=1, offset=2000, vaddr=2000, filesz=1b8, memsz=1b8
-Program header 5: type=1, offset=2db0, vaddr=3db0, filesz=260, memsz=268
-Program header 6: type=2, offset=2dc0, vaddr=3dc0, filesz=1f0, memsz=1f0
-Program header 7: type=4, offset=338, vaddr=338, filesz=20, memsz=20
-Program header 8: type=4, offset=358, vaddr=358, filesz=44, memsz=44
-Program header 9: type=6474e553, offset=338, vaddr=338, filesz=20, memsz=20
-Program header 10: type=6474e550, offset=2018, vaddr=2018, filesz=54, memsz=54
-Program header 11: type=6474e551, offset=0, vaddr=0, filesz=0, memsz=0
-Program header 12: type=6474e552, offset=2db0, vaddr=3db0, filesz=250, memsz=250
 Section header 0: name=, type=0, offset=0, size=0
 Section header 1: name=.interp, type=1, offset=318, size=1c
 Section header 2: name=.note.gnu.property, type=7, offset=338, size=20

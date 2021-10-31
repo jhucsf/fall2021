@@ -20,6 +20,12 @@ can choose whether you want to write the program in C or C++.)
 The code for the program is in a source file called `magic.c` or
 `magic.cpp`. The provided `Makefile` will build an executable called `magic`.
 
+## Grading criteria
+
+Your grade will be determined as follows:
+
+* Grading criteria coming soon!
+
 ## A word of caution
 
 You can no doubt find many example programs on the web that extract
@@ -252,7 +258,7 @@ After the summary of section headers, the program should print one line of
 output for each symbol, in the following format:
 
 <div class="highlighter-rouge"><pre>
-Symbol <i>N</i>: name=<i>name</i>, size=i<i>X</i>, info=<i>Y</i>, other=<i>Z</i>
+Symbol <i>N</i>: name=<i>name</i>, size=<i>X</i>, info=<i>Y</i>, other=<i>Z</i>
 </pre></div>
 
 *N* is the index of the symbol (0 for first symbol), *name* is the name of the
@@ -260,3 +266,60 @@ symbol based on the value of the symbol's `st_name` value (if non-zero, it speci
 an offset in the `.strtab` section.) *X*, *Y*, *Z* are the values of the
 symbol's `st_size`, `st_info`, and `st_other` fields, respectively,
 printed using `printf` with the `%lx` conversion.
+
+## Example input and output files
+
+The following files are provided for you to use in testing:
+
+Input file | ELF file type | Machine | Endianness | Expected output
+---------- | ------------- | ------- | ---------- | ---------------
+[sumarr\_x86\_64.o](assign04/sumarr_x86_64.o) | Relocatable object | x86-64 | Little endian | [sumarr\_x86\_64.o.out](assign04/sumarr_x86_64.o.out) 
+[sumarr\_x86\_64](assign04/sumarr_x86_64) | Executable | x86-64 | Little endian | [sumarr\_x86\_64.out](assign04/sumarr_x86_64.out) 
+[sumarr\_powerpc.o](assign04/sumarr_powerpc.o) | Relocatable object | PowerPC (32 bit) | Big endian | [sumarr\_powerpc.o.out](assign04/sumarr_powerpc.o.out) 
+[sumarr\_powerpc](assign04/sumarr_powerpc) | Executable | PowerPC (32 bit) | Big endian | [sumarr\_powerpc.out](assign04/sumarr_powerpc.out) 
+[sumarr\_sparc64.o](assign04/sumarr_sparc64.o) | Relocatable object | SPARC (64 bit) | Big endian | [sumarr\_sparc64.o.out](assign04/sumarr_sparc64.o.out) 
+[sumarr\_sparc64](assign04/sumarr_sparc64) | Executable | SPARC (64 bit) | Big endian | [sumarr\_sparc64.out](assign04/sumarr_sparc64.out) 
+
+
+All of these are compiled from a simple test program,
+[sumarr.c](assign04/sumarr.c).
+
+Your program should produce output identical to the expected output. For example:
+
+```
+curl -O https://jhucsf.github.io/fall2021/assign/assign04/sumarr_x86_64.o
+curl -O https://jhucsf.github.io/fall2021/assign/assign04/sumarr_x86_64.o.out
+./magic sumarr_x86_64.o > actual_sumarr_x86_64.o.out
+diff sumarr_x86_64.o.out actual_sumarr_x86_64.o.out
+echo $?
+```
+
+If the `diff` command does not produce any output, and exits with an exit code
+of 0 (success), then your `magic` program produced the expected output
+for `sumarr_x86_64.o`.
+
+## Handling 32 bit and big-endian ELF files
+
+If you choose to attemmpt handling 32 bit or big-endian ELF files, here
+are some tips. (Please note that this is a significant amount of work for
+almost no benefit!)
+
+The `e_ident[EI_CLASS]` array element in the ELF header indicates whether
+the ELF file is 32 bit or 64 bit.
+
+As noted in the [&lt;elf.h&gt;](#elfh) section, there are a separate set
+of data types for headers and symbol table entries in 32-bit ELF files.
+You will need to use these if the ELF file being analyzed is a 32-bit file.
+
+If the ELF file is big-endian, you will need to "byte swap" each data value
+that the program accessed, but reversing the bytes in its representation.
+This is based on the assumption that your program will be running on
+x86-64 Linux, which is a little-endian system.
+
+# Submitting
+
+Edit the `README.txt` file to summarize each team member's contributions.
+
+You can create a zipfile of your solution using the command `make solution.zip`.
+
+Submit your zipfile to Gradescope as **Assignment 4**.

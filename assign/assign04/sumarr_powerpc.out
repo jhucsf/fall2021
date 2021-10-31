@@ -1,15 +1,6 @@
 Object file type: ET_EXEC
 Instruction set: PowerPC
 Endianness: Big endian
-Program header 0: type=6, offset=34, vaddr=10000034, filesz=120, memsz=120
-Program header 1: type=3, offset=154, vaddr=10000154, filesz=d, memsz=d
-Program header 2: type=1, offset=0, vaddr=10000000, filesz=a94, memsz=a94
-Program header 3: type=1, offset=ff08, vaddr=1001ff08, filesz=110, memsz=118
-Program header 4: type=2, offset=ff20, vaddr=1001ff20, filesz=d0, memsz=d0
-Program header 5: type=4, offset=164, vaddr=10000164, filesz=44, memsz=44
-Program header 6: type=6474e550, offset=968, vaddr=10000968, filesz=3c, memsz=3c
-Program header 7: type=6474e551, offset=0, vaddr=0, filesz=0, memsz=0
-Program header 8: type=6474e552, offset=ff08, vaddr=1001ff08, filesz=f8, memsz=f8
 Section header 0: name=, type=0, offset=0, size=0
 Section header 1: name=.interp, type=1, offset=154, size=d
 Section header 2: name=.note.gnu.build-id, type=7, offset=164, size=24
