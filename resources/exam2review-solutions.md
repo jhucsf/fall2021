@@ -40,10 +40,12 @@ Explain the performance problem with this function and how to fix it.
 The problem is potential O(N<sup>2</sup>) running time when a large number of
 small strings are combined.  The problem is that `strcat` repeatedly has to look
 for the NUL terminator in the `result` buffer, an O(N) operation which
-is called in a loop.
+is called in a loop.  Note here that *N* is the combined length of all of
+the strings.
 
 This can be fixed by keeping track of where the NUL terminator in the result buffer
-is.  For example:
+is, and appending each string's data in the correct position (without requiring
+a loop to find that position.)  For example:
 
 ```c
 // combine a collection of strings into a single string
