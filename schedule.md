@@ -54,7 +54,7 @@ Nov 1             | Memory mapping, dynamic memory allocation: [slides](lectures
 Nov 3             | Exam 2 review session
 Nov 5              | **Exam 2** in class (in Shaffer 3)
 Nov 8             | Unix I/O, files: [slides](lectures/lecture25-public.pdf) | 10.1–10.11 |
-Nov 10              | Networks, Internet Protocol: [slides](lectures/lecture26-public.pdf) | 11.1–11.3 | <span class="tentative">A4 due Thurs 11/11</span>
+Nov 10              | Networks, Internet Protocol: [slides](lectures/lecture26-public.pdf) | 11.1–11.3 | A4 due Thurs 11/11
 Nov 12              | Sockets, Application Protocols: [slides](lectures/lecture27-public.pdf), [sockets.zip (example code)](lectures/sockets.zip) | 11.4 |
 Nov 15              | Network applications, HTTP: [slides](lectures/lecture28-public.pdf), [webserver.zip (example code)](lectures/webserver.zip) | 11.4–11.6 | 
 Nov 17              | Concurrency with processes: [slides](lectures/lecture29-public.pdf), [mp\_webserver.zip (example code)](lectures/mp_webserver.zip) | 12.1 | 
