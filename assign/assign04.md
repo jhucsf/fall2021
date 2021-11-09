@@ -24,7 +24,16 @@ The code for the program is in a source file called `magic.c` or
 
 Your grade will be determined as follows:
 
-* Grading criteria coming soon!
+* Your program compiles: 4%
+* `README.txt` is submitted: 1%
+* Correct output for x86-64 relocatable object files: 36%
+* Correct output for x86-64 executables: 30%
+* Correct output for x86-64 shared libraries: 18%
+* Correct output for 32-bit and/or big-endian ELF files: 1%
+* Design and coding style: 10%
+
+As usual, we expect your program not to have any memory errors or memory
+leaks. Be sure to use valgrind to tests for these.
 
 ## A word of caution
 
