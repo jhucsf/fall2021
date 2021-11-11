@@ -58,7 +58,7 @@ Nov 10              | Networks, Internet Protocol: [slides](lectures/lecture26-p
 Nov 12              | Sockets, Application Protocols: [slides](lectures/lecture27-public.pdf), [sockets.zip (example code)](lectures/sockets.zip) | 11.4 |
 Nov 15              | Network applications, HTTP: [slides](lectures/lecture28-public.pdf), [webserver.zip (example code)](lectures/webserver.zip) | 11.4–11.6 | 
 Nov 17              | Concurrency with processes: [slides](lectures/lecture29-public.pdf), [mp\_webserver.zip (example code)](lectures/mp_webserver.zip) | 12.1 | 
-Nov 19             | Concurrency with threads: [slides](lectures/lecture30-public.pdf), [mt\_webserver.zip (example code)](lectures/mt_webserver.zip), [mandelbrot.zip (example code)](lectures/mandelbrot.zip) | 12.3 | <span class="tentative">A5 due</span>
+Nov 19             | Concurrency with threads: [slides](lectures/lecture30-public.pdf), [mt\_webserver.zip (example code)](lectures/mt_webserver.zip), [mandelbrot.zip (example code)](lectures/mandelbrot.zip) | 12.3 | A5 due
 Nov 22–26          | *Thanksgiving vacation, no class*
 Nov 29             | Thread synchronization: [slides](lectures/lecture31-public.pdf), [synch.zip (example code)](lectures/synch.zip) | 12.4–12.5
 Dec 1             | Concurrency with I/O multiplexing: [slides](lectures/lecture32-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | 12.2 | 

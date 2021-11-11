@@ -21,6 +21,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Nov 11** — [Assignment 5](assign/assign05.html) is available, due Friday Nov 19th.
 * **Nov 11** — We are granting everyone in the course an additional 48 late hours to
   use on Assignments 4–6. Also, a minor error was corrected (regarding the error return
   value of `mmap`) in the description for [Assignment 4](assign/assign04.html).
