@@ -7,6 +7,9 @@ title: "Assignment 4: Analyzing ELF files"
 
 Assignment type: **Pair**, you may work with one partner
 
+*Update 11/11*: corrected an error in the description of how to detect an
+error return value from `mmap`
+
 # Analyzing ELF files
 
 In this assignment you will use memory-mapped file I/O to open and read
@@ -116,8 +119,9 @@ in memory:
 void *data = mmap(NULL, file_size, PROT_READ, MAP_PRIVATE, fd, 0);
 ```
 
-If `mmap` returns a non-NULL pointer value, the pointer value points to
-a region of memory in which the program can access the file contents.
+If `mmap` returns a pointer value other than `((void *)-1)`,
+the pointer value points to a region of memory in which the program
+can access the file contents.
 
 ## Decoding ELF files
 

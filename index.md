@@ -21,6 +21,9 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Nov 11** — We are granting everyone in the course an additional 48 late hours to
+  use on Assignments 4–6. Also, a minor error was corrected (regarding the error return
+  value of `mmap`) in the description for [Assignment 4](assign/assign04.html).
 * **Oct 31** — [Assignment 4](assign/assign04.html) has been posted. It is due Thursday,
   Nov 11th by 11pm. (Yes, at 11pm on 11/11.)
 * **Oct 31** — Solutions for the exam 2 review problems are available on the [Resources](resources.html) page.
