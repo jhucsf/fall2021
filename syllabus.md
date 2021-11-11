@@ -311,5 +311,5 @@ All programs are free to students.  Please see below for specifics:
     * Instagram: @jhustudyconsulting
 * The Writing Center
     * Undergraduate and graduate students in KSAS/Whiting School of Engineering can schedule 50-min sessions with a Writing Center tutor to look over a draft of written work (up to 10 pages) or a personal statement for graduate study
-    * Contact: Robert Tinkle rtinkle1@jhu.edu>
+    * Contact: Robert Tinkle <rtinkle1@jhu.edu>
     * Web Address: <https://krieger.jhu.edu/writingcenter/>
