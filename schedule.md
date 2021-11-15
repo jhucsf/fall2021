@@ -64,4 +64,4 @@ Nov 29             | Thread synchronization: [slides](lectures/lecture31-public.
 Dec 1             | Concurrency with I/O multiplexing: [slides](lectures/lecture32-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | 12.2 | 
 Dec 3             | Parallelism, concurrency issues: [slides](lectures/lecture33-public.pdf), [synch2.zip (example code)](lectures/synch2.zip) | 12.6–12.7 |
 Dec 6             | Final exam review session | | <span class="tentative">A6 due</span>
-Dec 16<br>(9am-12pm)   | **Exam 3** (during scheduled final exam time slot, location TBD)
+Dec 16<br>(9am-12pm)   | **Exam 3** (in Bloomberg 272)
