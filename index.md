@@ -21,6 +21,10 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Nov 15** — Everyone in the class may resubmit [Assignment 1](assign/assign01.html) and/or
+  [Assignment 2](assign/assign02.html) no later than **Friday, Dec 10th** for up to
+  75% of full credit.  To resubmit, use the **Assignment 1 MS2 (resubmission)**
+  and **Assignment 2 MS3 (resubmission)** inboxes on Gradescope.
 * **Nov 11** — [Assignment 5](assign/assign05.html) is available, due Friday Nov 19th.
 * **Nov 11** — We are granting everyone in the course an additional 48 late hours to
   use on Assignments 4–6. Also, a minor error was corrected (regarding the error return
