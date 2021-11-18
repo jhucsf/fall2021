@@ -28,3 +28,4 @@ Assignment | Type | Due
 [Assignment 3: Cache simulator](assign/assign03.html) | Pair | MS1 due Tues, Oct 12<br>MS2 due Tues, Oct 26<br>MS3 due Tues, Nov 2
 [Assignment 4: Analyzing ELF files](assign/assign04.html) | Pair | Thurs, Nov 11
 [Assignment 5: Network calculator](assign/assign05.html) | Pair | Fri, Nov 19
+[Assignment 6: Multithreaded network calculator](assign/assign06.html) | Pair | Wed, Dec 8th

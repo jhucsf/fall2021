@@ -21,6 +21,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Nov 18** — [Assignment 6](assign/assign06.md) is due Wednesday, Dec 8th by 11pm.
 * **Nov 15** — Exam 3 will take place Thursday, Dec 16th at 9am in **Bloomberg 272**
   (note the location!)
 * **Nov 15** — Everyone in the class may resubmit [Assignment 1](assign/assign01.html) and/or
