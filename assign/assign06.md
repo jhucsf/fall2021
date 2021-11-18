@@ -3,8 +3,6 @@ layout: default
 title: "Assignment 6: Multithreaded network calculator"
 ---
 
-Due dates:
-
 **Due**: Wednesday, Dec 8th by 11pm
 
 **Assignment type**: Pair (you may work with one partner, or do the assignment individually)
