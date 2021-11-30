@@ -7,6 +7,8 @@ title: "Assignment 6: Multithreaded network calculator"
 
 **Assignment type**: Pair (you may work with one partner, or do the assignment individually)
 
+*Update 11/30*: Made it clear that this assignment does not have milestones
+
 ## Overview
 
 In this assignment you will make your `calcServer` program from [Assignment 5](assign05.html)
@@ -40,6 +42,7 @@ correctly.
 
 Note that at most 48 late hours may be used for Milestone 2.
 
+<!--
 ## Milestone 1 tasks
 
 For Milestone 1, your code must compile, and there must be a substantial
@@ -60,6 +63,19 @@ have the elements described above.
 Your main tasks for Milestone 2 are (1) to use multiple threads to handle
 client connections (fully working), and (2) to use synchronization to protect
 shared data so that expression evaluations are atomic.
+-->
+
+## Tasks
+
+Your overall tasks are:
+
+* Create a thread for each client connection. You will need a struct type
+  to represent the data associated with a particular client, which should
+  include the client socket file descriptor and a pointer to the shared
+  `struct Calc` instance.  Make sure an instance of this type is
+  dynamically allocated for each thread.
+* Add synchronization to your `struct Calc` implementation so that expression
+  evaluations are atomic.
 
 ### Using threads for client connections
 
@@ -186,12 +202,12 @@ Download the following files into the directory containing your `calcServer` exe
 You can download the above files from a terminal by running the following commands:
 
 ```bash
-curl -O https://jhucsf.github.io/spring2021/assign/assign06/test_server_concurrent1.sh
-curl -O https://jhucsf.github.io/spring2021/assign/assign06/test_server_concurrent2.sh
-curl -O https://jhucsf.github.io/spring2021/assign/assign06/test_server_concurrent_stress.sh
-curl -O https://jhucsf.github.io/spring2021/assign/assign06/test_input.txt
-curl -O https://jhucsf.github.io/spring2021/assign/assign06/conc_test_input1.txt
-curl -O https://jhucsf.github.io/spring2021/assign/assign06/conc_test_input2.txt
+curl -O https://jhucsf.github.io/fall2021/assign/assign06/test_server_concurrent1.sh
+curl -O https://jhucsf.github.io/fall2021/assign/assign06/test_server_concurrent2.sh
+curl -O https://jhucsf.github.io/fall2021/assign/assign06/test_server_concurrent_stress.sh
+curl -O https://jhucsf.github.io/fall2021/assign/assign06/test_input.txt
+curl -O https://jhucsf.github.io/fall2021/assign/assign06/conc_test_input1.txt
+curl -O https://jhucsf.github.io/fall2021/assign/assign06/conc_test_input2.txt
 ```
 
 Make the scripts executable:
