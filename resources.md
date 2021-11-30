@@ -26,6 +26,12 @@ Review materials for Exam 2:
 * [Midterm, Spring 2020](resources/midterm-spring2020.pdf) (Question 4), [Solution](resources/midterm-spring2020-soln.pdf)
 * [Final exam, Spring 2020](resources/final-spring2020.pdf) (Questions 1–3), [Solution](resources/final-spring2020-soln.pdf)
 
+Review materials for Exam 3:
+
+* [Exam 3 practice questions](resources/exam3review.html), [Solutions](resources/exam3review-solutions.html)
+* [Final exam, Fall 2019](resources/final-fall2019.pdf) (Quesetions 4–5), [Solution](resources/final-fall2019-soln.pdf)
+* [Final exam, Spring 2020](resources/final-spring2020.pdf) (Questions 4–5), [Solution](resources/final-spring2020-soln.pdf)
+
 <!--
 * [Exam 1 practice questions](resources/exam1review.html), [Answers](resources/exam1review-solutions.html)
 * [Assembly language mini-exercises](resources/assemblyMini.html)

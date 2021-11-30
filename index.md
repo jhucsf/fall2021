@@ -21,6 +21,9 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Nov 30** — Review materials for Exam 3 are available on the [Resources](resources.html) page.
+  The last class meeting on Monday, Dec 6th will be used as a review session, so please bring
+  questions!
 * **Nov 18** — [Assignment 6](assign/assign06.html) is due Wednesday, Dec 8th by 11pm.
 * **Nov 15** — Exam 3 will take place Thursday, Dec 16th at 9am in **Bloomberg 272**
   (note the location!)
