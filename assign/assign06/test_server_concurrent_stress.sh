@@ -53,8 +53,6 @@ CLIENT_PID2=$!
 ( ( (perl -e 'sub r { chr(97+int(rand(26))) }; for $v (1..'$NUM_INCR') { print r().r().r()," = ",int(rand(1000)),"\n" }'; echo "quit") | nc localhost $port) > client3.out )&
 CLIENT_PID3=$!
 
-good=true
-
 # Wait for clients to finish
 wait $CLIENT_PID1
 echo "Client 1 finished"
@@ -79,6 +77,7 @@ fi
 # Check whether clients produced acceptable output
 if [ "$check1" -ne 0 -o "$check2" -ne 0 -o "$check3" -ne 0 ]; then
 	echo "One or more clients did not produce acceptable output!"
+	kill -9 $CALC_PID
 	exit 1
 else
 	echo "Clients completed without errors, that's good"
