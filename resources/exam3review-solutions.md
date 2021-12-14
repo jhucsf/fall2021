@@ -125,8 +125,7 @@ void chat_with_client(int client_fd) {
     } else {
       trim_line_terminator(buf);
 
-      if (strcmp(buf, "quit\n") == 0 ||
-                 strcmp(buf, "quit\r\n") == 0) {
+      if (strcmp(buf, "quit") == 0) {
         done = 1;
       } else {
         reverse_string(buf);
